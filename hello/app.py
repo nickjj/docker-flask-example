@@ -11,11 +11,6 @@ from hello.extensions import (
 )
 
 
-# CELERY_TASK_LIST = [
-#     'hello.blueprints.page.tasks'
-# ]
-
-
 def create_celery_app(app=None):
     """
     Create a new Celery app and tie together the Celery config to the app's
