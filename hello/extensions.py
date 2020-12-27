@@ -5,6 +5,7 @@ from redis import Redis
 
 from config.settings import REDIS_URL
 
+
 debug_toolbar = DebugToolbarExtension()
 db = SQLAlchemy()
 redis = Redis.from_url(REDIS_URL)
