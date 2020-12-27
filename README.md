@@ -66,6 +66,8 @@ and changes.
 - **Linting and testing**:
     - *flake8* is used to lint the code base
     - *pytest* and *pytest-cov* for writing tests and reporting test coverage
+- **Blueprints**:
+    - Add `page` blueprint to render a `/` page and `/up` health check endpoint
 - **Config**:
     - Log to STDOUT so that Docker can consume and deal with log output 
     - Extract a bunch of configuration settings into environment variables
