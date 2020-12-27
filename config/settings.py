@@ -17,10 +17,12 @@ db = "postgresql://{0}:{1}@{2}:{3}/{4}".format(pg_user, pg_pass,
 SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", db)
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+# Redis.
+REDIS_URL = os.getenv("REDIS_URL", "redis://redis:6379/0")
+
 # Celery.
-broker_url = os.getenv("CELERY_BROKER_URL", "redis://redis:6379/0")
 CELERY_CONFIG = {
-  "broker_url": broker_url,
-  "result_backend": broker_url,
+  "broker_url": REDIS_URL,
+  "result_backend": REDIS_URL,
   "include": []
 }
