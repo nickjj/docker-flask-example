@@ -7,6 +7,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Use `REDIS_URL` to configure connections for Redis directly and Celery
+- Add Redis `PING` check to the `/up` health check endpoint
+
 ### Removed
 
 - Unnecessary `CELERY_TASK_LIST` comment in `hello/app.py`, this was a left over copy / paste mishap
