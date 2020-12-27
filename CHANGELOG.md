@@ -7,7 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+- Import `Redis` more efficiently in `hello/extensions.py`
 
 ## [0.2.0] - 2020-12-27
 
