@@ -2,7 +2,7 @@ import os
 
 from flask import Blueprint, render_template, __version__
 
-from hello.extensions import db
+from hello.extensions import db, redis
 
 
 page = Blueprint("page", __name__, template_folder="templates")
@@ -18,5 +18,6 @@ def home():
 
 @page.route("/up")
 def up():
+    redis.ping()
     db.engine.execute("SELECT 1")
     return ""
