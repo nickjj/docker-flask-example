@@ -51,6 +51,28 @@ out for something else on your own.
 - [Webpack](https://webpack.js.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 
+#### But what about JavaScript?!
+
+Picking a JS library is a very app specific decision because it depends on
+which library you like and it also depends on if your app is going to be
+mostly Jinja templates with sprinkles of JS or an API back-end.
+
+This isn't an exhaustive list but here's a few reasonable choices depending on
+how you're building your app:
+
+- <https://hotwire.dev/>
+- <https://github.com/alpinejs/alpine>
+- <https://vuejs.org/>
+- <https://reactjs.org/>
+- <https://jquery.com/>
+
+On the bright side with Webpack being set up you can use any (or none) of these
+solutions very easily. You could follow a specific library's Webpack
+installation guides to get up and running in no time.
+
+Personally I'm going to be using Hotwire Turbo + Stimulus in most newer
+projects.
+
 ## Notable opinions and extensions
 
 Flask is a very unopinionated framework but I find in most apps I'm adding the
@@ -90,28 +112,6 @@ Besides the Flask app itself:
   management of this file is fully automated by the commands found in the `run`
   file. We'll cover this in more detail when we talk about [updating
   dependencies](#updating-dependencies).
-
-### But what about JavaScript?!
-
-Picking a JS library is a very app specific decision because it depends on
-which library you like, and it also depends on if your app is going to be
-mostly Jinja templates with sprinkles of JS or an API back-end.
-
-This isn't an exhaustive list but it's a few reasonable choices depending on
-how you're building your app:
-
-- <https://hotwire.dev/>
-- <https://github.com/alpinejs/alpine>
-- <https://vuejs.org/>
-- <https://reactjs.org/>
-- <https://jquery.com/>
-
-On the bright side with Webpack being set up you can use any (or none) of these
-solutions very easily. You could follow a specific library's Webpack
-installation guides to get up and running in no time.
-
-Personally I'm going to be using Hotwire Turbo + Stimulus in most newer
-projects.
 
 ## Running this app
 
