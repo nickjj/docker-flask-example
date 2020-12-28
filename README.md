@@ -58,14 +58,14 @@ same things over and over. Here's a few (but not all) note worthy additions
 and changes.
 
 - **Packages and extensions**:
-    - *gunicorn* for an app server in both development and production
-    - *Flask-DB* to help manage, migrate and seed your database
-    - *Flask-Static-Digest* to md5 tag and gzip your static files (and add optional CDN support)
-    - *Flask-Secrets* to quickly generate secure random tokens you can use for various things
-    - *Flask-DebugToolbar* to show useful information for debugging
+    - *[gunicorn](https://gunicorn.org/)* for an app server in both development and production
+    - *[Flask-DB](https://github.com/nickjj/flask-db)* to help manage, migrate and seed your database
+    - *[Flask-Static-Digest](https://github.com/nickjj/flask-static-digest)* to md5 tag and gzip your static files (and add optional CDN support)
+    - *[Flask-Secrets](https://github.com/nickjj/flask-secrets)* to quickly generate secure random tokens you can use for various things
+    - *[Flask-DebugToolbar](https://github.com/flask-debugtoolbar/flask-debugtoolbar)* to show useful information for debugging
 - **Linting and testing**:
-    - *flake8* is used to lint the code base
-    - *pytest* and *pytest-cov* for writing tests and reporting test coverage
+    - *[flake8](https://github.com/PyCQA/flake8)* is used to lint the code base
+    - *[pytest](https://github.com/pytest-dev/pytest)* and *pytest-cov* for writing tests and reporting test coverage
 - **Blueprints**:
     - Add `page` blueprint to render a `/` page and `/up` health check endpoint
 - **Config**:
