@@ -57,6 +57,7 @@ RUN chmod 0755 bin/* && bin/pip3-install
 ARG FLASK_ENV="production"
 ENV FLASK_ENV="${FLASK_ENV}" \
     FLASK_APP="hello.app" \
+    FLASK_SKIP_DOTENV="true" \
     PYTHONUNBUFFERED="true" \
     PATH="${PATH}:/home/python/.local/bin" \
     USER="python"

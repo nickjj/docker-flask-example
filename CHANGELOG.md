@@ -10,6 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Import `Redis` more efficiently in `hello/extensions.py`
+- Disable Flask tip about `python-dotenv` when running any `flask` CLI command
 
 ## [0.2.0] - 2020-12-27
 
