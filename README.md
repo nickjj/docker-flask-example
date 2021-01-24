@@ -393,7 +393,9 @@ sure any lock files get copied from Docker's image (thanks to volumes) into
 your code repo and now you can commit those files to version control like
 usual.
 
-You can check out the `run` file to see what these commands do in more detail.
+You can check out the
+[run](https://github.com/nickjj/docker-flask-example/blob/main/run) file to see
+what these commands do in more detail.
 
 As for the requirements' lock file, this ensures that the same exact versions
 of every package you have (including dependencies of dependencies) get used the
@@ -409,7 +411,8 @@ to `assets/package.json`, then run the `./run` command(s) mentioned earlier.
 
 You'll want to run `docker-compose build` since it will use any existing lock
 files if they exist. You can also check out the complete CI test pipeline in
-the `run` file under the `ci:test` function.
+the [run](https://github.com/nickjj/docker-flask-example/blob/main/run) file
+under the `ci:test` function.
 
 #### In production:
 
