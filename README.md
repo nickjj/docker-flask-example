@@ -388,10 +388,15 @@ don't run that just yet.
 
 #### In development:
 
-You'll want to run `./run pip3:install` or `./run yarn:install`. That'll make
-sure any lock files get copied from Docker's image (thanks to volumes) into
-your code repo and now you can commit those files to version control like
-usual.
+You can run `./run pip3:outdated` or `./run yarn:outdated` to get a list of
+outdated dependencies based on what you currently have installed. Once you've
+figured out what you want to update, go make those updates in your
+`requirements.txt` and / or `assets/package.json` file.
+
+Then to update your dependencies you can run `./run pip3:install` or `./run
+yarn:install`. That'll make sure any lock files get copied from Docker's image
+(thanks to volumes) into your code repo and now you can commit those files to
+version control like usual.
 
 You can check out the
 [run](https://github.com/nickjj/docker-flask-example/blob/main/run) file to see
