@@ -184,7 +184,7 @@ a few more seconds and reload. It should self resolve.
 ./run flake8
 ```
 
-#### Running the test suite
+#### Running the test suite:
 
 ```sh
 # You should see all passing tests. Warnings are typically ok.
