@@ -55,6 +55,11 @@ function pip3:install {
   docker-compose down
 }
 
+function pip3:outdated {
+  ## List any installed packages that are outdated
+  docker-compose "${DC}" ${TTY} web pip3 list --outdated
+}
+
 function yarn:install {
   ## Install yarn dependencies and write lock file
   docker-compose build
