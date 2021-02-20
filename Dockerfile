@@ -1,4 +1,4 @@
-FROM node:14.15.1-buster-slim AS webpack
+FROM node:14.15.5-buster-slim AS webpack
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/assets
@@ -35,7 +35,7 @@ CMD ["bash"]
 
 #
 
-FROM python:3.9.1-slim-buster AS app
+FROM python:3.9.2-slim-buster AS app
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app

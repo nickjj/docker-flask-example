@@ -14,6 +14,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Update PostgreSQL from `13.1` to `13.2`
+- Update Redis from `6.0.9` to `6.0.10`
+- Update Python from `3.9.1` to `3.9.2`
+- Update Node from `14.15.1` to `14.5.5`
+- Update all Python and Node packages to their latest stable releases
 - Import `Redis` more efficiently in `hello/extensions.py`
 - Disable Flask tip about `python-dotenv` when running any `flask` CLI command
 - Refactor `run` script to remove a lot of duplication by introducing helper functions
