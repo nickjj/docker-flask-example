@@ -12,59 +12,70 @@ if [[ ! -t 1 ]]; then
   TTY="-T"
 fi
 
+# -----------------------------------------------------------------------------
+# Helper functions start with _ and aren't listed in this script's help menu.
+# -----------------------------------------------------------------------------
+
+function _dc {
+  docker-compose "${DC}" ${TTY} "${@}"
+}
+
+function _build_run_down {
+  docker-compose build
+  docker-compose run ${TTY} "${@}"
+  docker-compose down
+}
+
+# -----------------------------------------------------------------------------
+
 function flask {
   ## Run any Flask commands
-  docker-compose "${DC}" ${TTY} web flask "${@}"
+  _dc web flask "${@}"
 }
 
 function flake8 {
   ## Lint Python code with flake8
-  docker-compose "${DC}" ${TTY} web flake8 "${@}"
+  _dc web flake8 "${@}"
 }
 
 function pytest {
   ## Run test suite with pytest
-  docker-compose "${DC}" ${TTY} web pytest test/ "${@}"
+  _dc web pytest test/ "${@}"
 }
 
 function pytest-cov {
   ## Get test coverage with pytest-cov
-  docker-compose "${DC}" ${TTY} web pytest \
-    --cov test/ --cov-report term-missing "${@}"
+  _dc web pytest --cov test/ --cov-report term-missing "${@}"
 }
 
 function bash {
   ## Start a Bash session in the web container
-  docker-compose "${DC}" ${TTY} web bash "${@}"
+  _dc web bash "${@}"
 }
 
 function psql {
   ## Connect to PostgreSQL with psql
-  docker-compose "${DC}" ${TTY} postgres psql -U "${APP_NAME}" "${@}"
+ _dc postgres psql -U "${APP_NAME}" "${@}"
 }
 
 function redis-cli {
   ## Connect to Redis with redis-cli
-  docker-compose "${DC}" ${TTY} redis redis-cli "${@}"
+  _dc redis redis-cli "${@}"
 }
 
 function pip3:install {
   ## Install pip3 dependencies and write lock file
-  docker-compose build
-  docker-compose run ${TTY} web bin/pip3-install
-  docker-compose down
+  _build_run_down web bin/pip3-install
 }
 
 function pip3:outdated {
   ## List any installed packages that are outdated
-  docker-compose "${DC}" ${TTY} web pip3 list --outdated
+  _dc web pip3 list --outdated
 }
 
 function yarn:install {
   ## Install yarn dependencies and write lock file
-  docker-compose build
-  docker-compose run ${TTY} webpack yarn install
-  docker-compose down
+  _build_run_down webpack yarn install
 }
 
 function clean {
@@ -109,7 +120,7 @@ function ci:test {
 function help {
     printf "%s <task> [args]\n\nTasks:\n" "${0}"
 
-    compgen -A function | cat -n
+    compgen -A function | grep -v "^_" | cat -n
 
     printf "\nExtended help:\n  Each task has comments for general usage\n"
 }

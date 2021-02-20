@@ -11,6 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Import `Redis` more efficiently in `hello/extensions.py`
 - Disable Flask tip about `python-dotenv` when running any `flask` CLI command
+- Refactor `run` script to remove a lot of duplication by introducing helper functions
 
 ### Removed
 
