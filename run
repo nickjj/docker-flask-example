@@ -123,11 +123,11 @@ function ci:test {
 }
 
 function help {
-    printf "%s <task> [args]\n\nTasks:\n" "${0}"
+  printf "%s <task> [args]\n\nTasks:\n" "${0}"
 
-    compgen -A function | grep -v "^_" | cat -n
+  compgen -A function | grep -v "^_" | cat -n
 
-    printf "\nExtended help:\n  Each task has comments for general usage\n"
+  printf "\nExtended help:\n  Each task has comments for general usage\n"
 }
 
 # This idea is heavily inspired by: https://github.com/adriancooney/Taskfile
