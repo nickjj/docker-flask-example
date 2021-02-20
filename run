@@ -78,6 +78,11 @@ function yarn:install {
   _build_run_down webpack yarn install
 }
 
+function yarn:outdated {
+  ## List any installed packages that are outdated
+  _dc webpack yarn outdated
+}
+
 function clean {
   ## Remove cache and other machine generates files
   rm -rf .pytest_cache/ .webpack_cache/ public/* .coverage celerybeat-schedule

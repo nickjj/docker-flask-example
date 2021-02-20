@@ -7,6 +7,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `run pip3:outdated` task to show outdated Python dependencies
+- `run yarn:outdated` task to show outdated Node dependencies
+
 ### Changed
 
 - Import `Redis` more efficiently in `hello/extensions.py`
