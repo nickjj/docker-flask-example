@@ -4,8 +4,7 @@ import os
 SECRET_KEY = os.getenv("SECRET_KEY", None)
 
 SERVER_NAME = os.getenv("SERVER_NAME",
-                        "localhost:{0}".format(os.getenv("DOCKER_WEB_PORT",
-                                                         "8000")))
+                        "localhost:{0}".format(os.getenv("PORT", "8000")))
 # SQLAlchemy.
 pg_user = os.getenv("POSTGRES_USER", "hello")
 pg_pass = os.getenv("POSTGRES_PASSWORD", "password")

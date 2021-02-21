@@ -7,7 +7,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Added
+
+- `PORT` env variable to be compatible with more hosting providers
+
+### Changed
+
+- Rename `DOCKER_WEB_PORT` to `DOCKER_WEB_PORT_FORWARD`
+
+### Removed
+
+- Ability to customize gunicorn bind host, it's hard coded to `0.0.0.0` now
 
 ## [0.3.0] - 2021-02-20
 
