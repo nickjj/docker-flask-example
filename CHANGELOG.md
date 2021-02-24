@@ -10,6 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - `PORT` env variable to be compatible with more hosting providers
+- `CELERY_LOG_LEVEL` env variable to configure Celery's log level (defaults to `info`)
 
 ### Changed
 
