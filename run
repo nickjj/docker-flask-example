@@ -28,29 +28,34 @@ function _build_run_down {
 
 # -----------------------------------------------------------------------------
 
+function cmd {
+  ## Run any command you want in the web container
+  _dc web "${@}"
+}
+
 function flask {
   ## Run any Flask commands
-  _dc web flask "${@}"
+  cmd flask "${@}"
 }
 
 function flake8 {
   ## Lint Python code with flake8
-  _dc web flake8 "${@}"
+  cmd flake8 "${@}"
 }
 
 function pytest {
   ## Run test suite with pytest
-  _dc web pytest test/ "${@}"
+ cmd pytest test/ "${@}"
 }
 
 function pytest-cov {
   ## Get test coverage with pytest-cov
-  _dc web pytest --cov test/ --cov-report term-missing "${@}"
+  cmd pytest --cov test/ --cov-report term-missing "${@}"
 }
 
 function bash {
   ## Start a Bash session in the web container
-  _dc web bash "${@}"
+  cmd bash "${@}"
 }
 
 function psql {
@@ -70,7 +75,7 @@ function pip3:install {
 
 function pip3:outdated {
   ## List any installed packages that are outdated
-  _dc web pip3 list --outdated
+  cmd pip3 list --outdated
 }
 
 function yarn:install {

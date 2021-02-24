@@ -11,10 +11,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `PORT` env variable to be compatible with more hosting providers
 - `CELERY_LOG_LEVEL` env variable to configure Celery's log level (defaults to `info`)
+- `run cmd` to run any command you want in the web container, ie. `run cmd python3 --version`
 
 ### Changed
 
 - Rename `DOCKER_WEB_PORT` to `DOCKER_WEB_PORT_FORWARD`
+- Refactor `run` script so all web container commands use the new `cmd` function
 
 ### Removed
 
