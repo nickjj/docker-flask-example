@@ -296,9 +296,11 @@ find . -type f -exec perl -i -pe "s/(helloflask|hello)/${lower}/g" {} + \
 
 If you're not comfortable running these commands or they don't work for
 whatever reason, you can also do a case sensitive find / replace within your
-code editor too. There's nothing special going on here. It's literally
-replacing "helloflask" and "hello" with your lowercase app name and then doing
-the same for "Hello" for the module name.
+code editor too. There's nothing special going on here.
+
+It's literally replacing "helloflask" and "hello" with your lowercase app name
+and then doing the same for "Hello" for the module name. It also renames one
+directory too.
 
 #### Verify everything was changed successfully:
 
