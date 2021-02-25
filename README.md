@@ -50,6 +50,7 @@ out for something else on your own.
 
 - [Webpack](https://webpack.js.org/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [Heroicons](https://heroicons.dev/)
 
 #### But what about JavaScript?!
 
