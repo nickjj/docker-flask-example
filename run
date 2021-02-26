@@ -45,7 +45,7 @@ function flake8 {
 
 function pytest {
   ## Run test suite with pytest
- cmd pytest test/ "${@}"
+  cmd pytest test/ "${@}"
 }
 
 function pytest-cov {
