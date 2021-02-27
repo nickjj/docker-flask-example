@@ -22,6 +22,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Ability to customize gunicorn bind host, it's hard coded to `0.0.0.0` now
 
+### Fixed
+
+- Define `PYTHONPATH="."` env var in the Dockerfile so that `flask db migrate` works
+
 ## [0.3.0] - 2021-02-20
 
 ### Added

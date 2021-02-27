@@ -59,6 +59,7 @@ ENV FLASK_ENV="${FLASK_ENV}" \
     FLASK_APP="hello.app" \
     FLASK_SKIP_DOTENV="true" \
     PYTHONUNBUFFERED="true" \
+    PYTHONPATH="." \
     PATH="${PATH}:/home/python/.local/bin" \
     USER="python"
 
