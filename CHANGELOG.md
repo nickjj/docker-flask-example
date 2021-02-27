@@ -17,6 +17,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Rename `DOCKER_WEB_PORT` to `DOCKER_WEB_PORT_FORWARD`
 - Refactor `run` script so all web container commands use the new `cmd` function
+- Replace `##` comments with `#` in the `run` script
 
 ### Removed
 

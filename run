@@ -29,67 +29,67 @@ function _build_run_down {
 # -----------------------------------------------------------------------------
 
 function cmd {
-  ## Run any command you want in the web container
+  # Run any command you want in the web container
   _dc web "${@}"
 }
 
 function flask {
-  ## Run any Flask commands
+  # Run any Flask commands
   cmd flask "${@}"
 }
 
 function flake8 {
-  ## Lint Python code with flake8
+  # Lint Python code with flake8
   cmd flake8 "${@}"
 }
 
 function pytest {
-  ## Run test suite with pytest
+  # Run test suite with pytest
   cmd pytest test/ "${@}"
 }
 
 function pytest-cov {
-  ## Get test coverage with pytest-cov
+  # Get test coverage with pytest-cov
   cmd pytest --cov test/ --cov-report term-missing "${@}"
 }
 
 function bash {
-  ## Start a Bash session in the web container
+  # Start a Bash session in the web container
   cmd bash "${@}"
 }
 
 function psql {
-  ## Connect to PostgreSQL with psql
+  # Connect to PostgreSQL with psql
  _dc postgres psql -U "${APP_NAME}" "${@}"
 }
 
 function redis-cli {
-  ## Connect to Redis with redis-cli
+  # Connect to Redis with redis-cli
   _dc redis redis-cli "${@}"
 }
 
 function pip3:install {
-  ## Install pip3 dependencies and write lock file
+  # Install pip3 dependencies and write lock file
   _build_run_down web bin/pip3-install
 }
 
 function pip3:outdated {
-  ## List any installed packages that are outdated
+  # List any installed packages that are outdated
   cmd pip3 list --outdated
 }
 
 function yarn:install {
-  ## Install yarn dependencies and write lock file
+  # Install yarn dependencies and write lock file
   _build_run_down webpack yarn install
 }
 
 function yarn:outdated {
-  ## List any installed packages that are outdated
+  # List any installed packages that are outdated
   _dc webpack yarn outdated
 }
 
 function clean {
-  ## Remove cache and other machine generates files
+  # Remove cache and other machine generates files
   rm -rf .pytest_cache/ .webpack_cache/ public/* .coverage celerybeat-schedule
   touch public/.keep
 }
