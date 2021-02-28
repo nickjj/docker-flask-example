@@ -4,7 +4,7 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 WORKDIR /app/assets
 
 RUN apt-get update \
-  && apt-get install -y build-essential curl libpq-dev --no-install-recommends \
+  && apt-get install -y build-essential --no-install-recommends \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app

@@ -22,6 +22,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Removed
 
 - Ability to customize gunicorn bind host, it's hard coded to `0.0.0.0` now
+- `curl` and `libpq-dev` apt dependencies from the webpack image (they're not needed)
 
 ### Fixed
 
