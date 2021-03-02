@@ -27,6 +27,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - Define `PYTHONPATH="."` env var in the Dockerfile so that `flask db migrate` works
+- Update Flask-DB to `0.3.1` which makes sure `alembic.ini.new` gets properly initalized
 
 ## [0.3.0] - 2021-02-20
 

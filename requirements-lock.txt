@@ -8,10 +8,10 @@ click==7.1.2
 click-didyoumean==0.0.3
 click-plugins==1.1.1
 click-repl==0.1.6
-coverage==5.4
+coverage==5.5
 flake8==3.8.4
 Flask==1.1.2
-Flask-DB==0.3.0
+Flask-DB==0.3.1
 Flask-DebugToolbar==0.11.0
 Flask-Secrets==0.1.0
 Flask-SQLAlchemy==2.4.4
