@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.4.0] - 2021-03-02
+
 ### Added
 
 - `PORT` env variable to be compatible with more hosting providers
@@ -70,7 +74,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Everything!
 
-[Unreleased]: https://github.com/nickjj/docker-flask-example/compare/0.3.0...HEAD
+[Unreleased]: https://github.com/nickjj/docker-flask-example/compare/0.4.0...HEAD
+[0.4.0]: https://github.com/nickjj/docker-flask-example/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/nickjj/docker-flask-example/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/nickjj/docker-flask-example/compare/0.1.0...0.2.0
 [0.1.0]: https://github.com/nickjj/docker-flask-example/releases/tag/0.1.0
