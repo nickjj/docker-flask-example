@@ -7,7 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+- Switch `OptimizeCSSAssetsPlugin` with `CssMinimizerPlugin` for Webpack 5
 
 ## [0.4.0] - 2021-03-02
 
