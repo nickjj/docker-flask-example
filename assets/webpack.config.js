@@ -5,7 +5,7 @@ var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 var TerserPlugin = require('terser-webpack-plugin');
 
-var node_modules_path = '/node_modules'
+var node_modules_path = '/node_modules';
 
 var common = {
   watchOptions: {
@@ -24,11 +24,11 @@ var common = {
         test: /\.js$/,
         exclude: [`/${node_modules_path}/`],
         use: [
-          {loader: "babel-loader"}
+          {loader: 'babel-loader'}
         ]
       },
       {
-        test: [/\.css$/],
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -59,23 +59,23 @@ var common = {
 module.exports = [
   merge(common, {
     entry: [
-      __dirname + "/app/app.css",
-      __dirname + "/app/app.js"
+      __dirname + '/app/app.css',
+      __dirname + '/app/app.js'
     ],
     output: {
-      path: __dirname + "/../public",
-      filename: "js/app.js",
-      publicPath: "/"
+      path: __dirname + '/../public',
+      filename: 'js/app.js',
+      publicPath: '/'
     },
     resolve: {
       modules: [
         node_modules_path,
-        __dirname + "/app"
+        __dirname + '/app'
       ]
     },
     plugins: [
       new CopyWebpackPlugin({patterns: [{from: __dirname + '/static'}]}),
-      new MiniCssExtractPlugin({filename: "css/app.css"}),
+      new MiniCssExtractPlugin({filename: 'css/app.css'}),
     ]
   })
 ];
