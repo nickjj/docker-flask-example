@@ -13,10 +13,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Replace deprecated Webpack 5 `file-loader` with `asset/resource`
 - Update Alembic from `1.5.4` to `1.5.5`
 - Update flake8 from `3.8.4` to `3.9.0`
+- Update TailwindCSS to `2.1.0` and enable the JIT compiler
 
 ### Removed
 
 - Unused `webpack` import in Webpack config
+- Remove Webpack's cache since the JIT compiler is pretty speedy as is
 
 ### Fixed
 
