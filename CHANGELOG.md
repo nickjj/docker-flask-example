@@ -11,7 +11,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Switch `OptimizeCSSAssetsPlugin` with `CssMinimizerPlugin` for Webpack 5
 - Replace deprecated Webpack 5 `file-loader` with `asset/resource`
-- Update Alembic from `1.5.4` to `1.5.5`
+- Update gunicorn from `20.0.4` to `20.1.0`
+- Update Alembic from `1.5.4` to `1.5.8`
 - Update flake8 from `3.8.4` to `3.9.0`
 - Update TailwindCSS to `2.1.0` and enable the JIT compiler
 
