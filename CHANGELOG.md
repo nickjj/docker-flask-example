@@ -24,6 +24,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - Code styling issues in the Webpack config (single quotes, semi-colons, etc.)
+- Set an empty ENTRYPOINT for the worker to avoid race conditions when copying static files
 
 ## [0.4.0] - 2021-03-02
 
