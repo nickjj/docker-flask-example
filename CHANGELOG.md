@@ -25,6 +25,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Code styling issues in the Webpack config (single quotes, semi-colons, etc.)
 - Set an empty ENTRYPOINT for the worker to avoid race conditions when copying static files
+- Fix `run` script error for unbound variable in older versions of Bash on macOS
 
 ## [0.4.0] - 2021-03-02
 
