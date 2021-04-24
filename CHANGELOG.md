@@ -15,6 +15,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Switch `OptimizeCSSAssetsPlugin` with `CssMinimizerPlugin` for Webpack 5
 - Replace deprecated Webpack 5 `file-loader` with `asset/resource`
+- Update SQLAlchemy from `1.3.23` to `1.4.11`
+- Update SQLAlchemy-Utils from `0.36.8` to `0.37.0`
+- Update Flask-SQLAlchemy from `2.4.4` to `2.5.1`
 - Update gunicorn from `20.0.4` to `20.1.0`
 - Update Alembic from `1.5.4` to `1.5.8`
 - Update flake8 from `3.8.4` to `3.9.0`
