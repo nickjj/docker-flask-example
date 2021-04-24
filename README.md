@@ -86,7 +86,7 @@ and changes.
     - *[Flask-Static-Digest](https://github.com/nickjj/flask-static-digest)* to md5 tag and gzip your static files (and add optional CDN support)
     - *[Flask-Secrets](https://github.com/nickjj/flask-secrets)* to quickly generate secure random tokens you can use for various things
     - *[Flask-DebugToolbar](https://github.com/flask-debugtoolbar/flask-debugtoolbar)* to show useful information for debugging
-- **Linting and testing**:
+- **Linting, formatting and testing**:
     - *[flake8](https://github.com/PyCQA/flake8)* is used to lint the code base
     - *[black](https://github.com/psf/black)* is used to format the code base
     - *[pytest](https://github.com/pytest-dev/pytest)* and *pytest-cov* for writing tests and reporting test coverage
@@ -184,6 +184,13 @@ a few more seconds and reload. It should self resolve.
 ```sh
 # You should get no output (that means everything is operational).
 ./run flake8
+```
+
+#### Formatting the code base:
+
+```sh
+# You should see that everything is unchanged (it's all already formatted).
+./run black
 ```
 
 #### Running the test suite:
@@ -300,6 +307,7 @@ adding custom changes.
 ```sh
 # You can run this from the same terminal as before.
 ./run flake8
+./run black
 ./run pytest
 ```
 
