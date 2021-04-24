@@ -17,7 +17,7 @@ def app():
         "DEBUG": False,
         "TESTING": True,
         "WTF_CSRF_ENABLED": False,
-        "SQLALCHEMY_DATABASE_URI": db_uri
+        "SQLALCHEMY_DATABASE_URI": db_uri,
     }
 
     _app = create_app(settings_override=params)
