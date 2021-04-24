@@ -20,7 +20,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update Flask-SQLAlchemy from `2.4.4` to `2.5.1`
 - Update gunicorn from `20.0.4` to `20.1.0`
 - Update Alembic from `1.5.4` to `1.5.8`
-- Update flake8 from `3.8.4` to `3.9.0`
+- Update flake8 from `3.8.4` to `3.9.1`
 - Update TailwindCSS to `2.1.0` and enable the JIT compiler
 - Replace `APP_NAME` in `run` script with `POSTGRES_USER` for connecting to psql
 
