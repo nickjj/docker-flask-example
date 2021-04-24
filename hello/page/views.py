@@ -5,7 +5,7 @@ from flask import __version__
 from flask import render_template
 
 from hello.extensions import db
-from hello.extensions import redis
+from hello.initializers import redis
 
 
 page = Blueprint("page", __name__, template_folder="templates")

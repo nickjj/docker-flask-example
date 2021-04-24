@@ -9,6 +9,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Nothing yet!
 
+### Added
+
+- `hello/initializers.py` now exists to define frequently used imports, variables, etc.
+
 ## [0.5.0] - 2021-04-24
 
 ### Added
