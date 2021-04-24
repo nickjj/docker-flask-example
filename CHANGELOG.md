@@ -28,6 +28,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Removed
 
+- `hello/blueprints/` namespace has been removed
 - Unused `webpack` import in Webpack config
 - Remove Webpack's cache since the JIT compiler is pretty speedy as is
 

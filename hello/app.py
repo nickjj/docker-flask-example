@@ -3,7 +3,7 @@ from flask import Flask
 from werkzeug.debug import DebuggedApplication
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-from hello.blueprints.page.views import page
+from hello.page.views import page
 from hello.extensions import db
 from hello.extensions import debug_toolbar
 from hello.extensions import flask_static_digest

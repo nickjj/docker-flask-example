@@ -49,7 +49,8 @@ find . -type f -exec \
   perl -i \
     -pe "s/(${FIND_APP_NAME}${FIND_FRAMEWORK}|${FIND_APP_NAME})/${APP_NAME}/g;" \
     -pe "s/${FIND_MODULE_NAME}/${MODULE_NAME}/g;" {} + \
-  && mv "${FIND_APP_NAME}" "${APP_NAME}"
+  && mv "${FIND_APP_NAME}" "${APP_NAME}" \
+  && mv "test/${FIND_APP_NAME}" "test/${APP_NAME}"
 # -----------------------------------------------------------------------------
 
 cat << EOF
