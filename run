@@ -42,6 +42,11 @@ function flake8 {
   cmd flake8 "${@}"
 }
 
+function black {
+  # Format Python code with black
+  cmd black . "${@}"
+}
+
 function pytest {
   # Run test suite with pytest
   cmd pytest test/ "${@}"
@@ -124,6 +129,7 @@ function ci:test {
     psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
 
   flake8 "${@}"
+  black --check
   flask db reset --with-testdb
   pytest "${@}"
 }
