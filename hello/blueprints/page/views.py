@@ -1,8 +1,11 @@
 import os
 
-from flask import Blueprint, render_template, __version__
+from flask import Blueprint
+from flask import __version__
+from flask import render_template
 
-from hello.extensions import db, redis
+from hello.extensions import db
+from hello.extensions import redis
 
 
 page = Blueprint("page", __name__, template_folder="templates")
