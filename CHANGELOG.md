@@ -13,6 +13,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `hello/initializers.py` now exists to define frequently used imports, variables, etc.
 
+### Changed
+
+- Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
+
 ## [0.5.0] - 2021-04-24
 
 ### Added
