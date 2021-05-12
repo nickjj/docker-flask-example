@@ -18,6 +18,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
 - Update Tailwind from `2.1.0` to `2.1.2`
 - Update all Webpack related dependencies to their latest versions
+- Update Flask from `1.1.2` to `2.0.0`
+- Update Alembic from `1.5.8` to `1.6.2`
+- Update SQLAlchemy from `1.4.11` to `1.4.15`
+- Update SQLAlchemy-Utils from `0.37.0` to `0.37.2`
 
 ## [0.5.0] - 2021-04-24
 
