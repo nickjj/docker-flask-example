@@ -11,7 +11,7 @@ from hello.initializers import redis
 page = Blueprint("page", __name__, template_folder="templates")
 
 
-@page.route("/")
+@page.get("/")
 def home():
     return render_template(
         "page/home.html",
@@ -21,7 +21,7 @@ def home():
     )
 
 
-@page.route("/up")
+@page.get("/up")
 def up():
     redis.ping()
     db.engine.execute("SELECT 1")

@@ -23,6 +23,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update SQLAlchemy from `1.4.11` to `1.4.15`
 - Update SQLAlchemy-Utils from `0.37.0` to `0.37.2`
 - Update Redis from `6.0.10` to `6.2.3`
+- Use the new Flask 2.0 `.get` decorator
 
 ## [0.5.0] - 2021-04-24
 
