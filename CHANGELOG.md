@@ -16,12 +16,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
 - Update Tailwind from `2.1.0` to `2.1.2`
 - Update all Webpack related dependencies to their latest versions
-- Update Flask from `1.1.2` to `2.0.0`
-- Update Alembic from `1.5.8` to `1.6.2`
+- Update Flask from `1.1.2` to `2.0.1`
+- Update Celery from `5.0.5` to `5.1.0`
+- Update Alembic from `1.5.8` to `1.6.4`
 - Update SQLAlchemy from `1.4.11` to `1.4.15`
-- Update SQLAlchemy-Utils from `0.37.0` to `0.37.3`
+- Update SQLAlchemy-Utils from `0.37.0` to `0.37.4`
 - Update Redis from `6.0.10` to `6.2.3`
 - Update pytest from `6.2.2` to `6.2.4`
+- Update pytest-cov from `2.11.1` to `2.12.0`
 - Use the new Flask 2.0 `.get` decorator
 
 ## [0.5.0] - 2021-04-24
