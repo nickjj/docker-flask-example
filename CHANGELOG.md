@@ -7,7 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+- Use f string for `db` variable in `config/settings.py`
 
 ## [0.6.0] - 2021-05-27
 
