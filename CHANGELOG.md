@@ -10,6 +10,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Use f string for `db` variable in `config/settings.py`
+- Update PostgreSQL from `13.2` to `13.3`
+- Update Redis from `6.2.3` to `6.2.4`
 - Update Alembic from `1.6.4` to `1.6.5`
 - Update SQLAlchemy from `1.4.15` to `1.4.17`
 - Update SQLAlchemy-Utils from `0.37.4` to `0.37.6`
