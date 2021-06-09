@@ -10,6 +10,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Use f string for `db` variable in `config/settings.py`
+- Update Alembic from `1.6.4` to `1.6.5`
+- Update SQLAlchemy from `1.4.15` to `1.4.17`
+- Update SQLAlchemy-Utils from `0.37.4` to `0.37.6`
+- Update pytest-cov from `2.12.0` to `2.12.1`
+- Update Flask-DB from `0.3.1` to `0.3.2`
 
 ## [0.6.0] - 2021-05-27
 
