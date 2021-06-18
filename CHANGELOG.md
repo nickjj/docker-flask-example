@@ -13,9 +13,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update PostgreSQL from `13.2` to `13.3`
 - Update Redis from `6.2.3` to `6.2.4`
 - Update Alembic from `1.6.4` to `1.6.5`
-- Update SQLAlchemy from `1.4.15` to `1.4.17`
-- Update SQLAlchemy-Utils from `0.37.4` to `0.37.6`
+- Update psycopg2 from `2.8.6` to `2.9.1`
+- Update SQLAlchemy from `1.4.17` to `1.4.18`
+- Update SQLAlchemy-Utils from `0.37.6` to `0.37.7`
 - Update pytest-cov from `2.12.0` to `2.12.1`
+- Update Celery from `5.1.0` to `5.1.1`
 - Update Flask-DB from `0.3.1` to `0.3.2`
 
 ## [0.6.0] - 2021-05-27

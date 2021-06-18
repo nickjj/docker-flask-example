@@ -2,14 +2,14 @@ Flask==2.0.1
 werkzeug==2.0.1
 gunicorn==20.1.0
 
-psycopg2==2.8.6
-SQLAlchemy==1.4.17
-SQLAlchemy-Utils==0.37.6
+psycopg2==2.9.1
+SQLAlchemy==1.4.18
+SQLAlchemy-Utils==0.37.7
 Flask-SQLAlchemy==2.5.1
 alembic==1.6.5
 
 redis==3.5.3
-celery==5.1.0
+celery==5.1.1
 
 pytest==6.2.4
 pytest-cov==2.12.1
