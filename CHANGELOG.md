@@ -19,6 +19,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update pytest-cov from `2.12.0` to `2.12.1`
 - Update Celery from `5.1.0` to `5.1.1`
 - Update Flask-DB from `0.3.1` to `0.3.2`
+- Update all front-end dependencies to their latest versions
 
 ## [0.6.0] - 2021-05-27
 
