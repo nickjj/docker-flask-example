@@ -3,7 +3,7 @@ werkzeug==2.0.1
 gunicorn==20.1.0
 
 psycopg2==2.9.1
-SQLAlchemy==1.4.20
+SQLAlchemy==1.4.22
 SQLAlchemy-Utils==0.37.8
 Flask-SQLAlchemy==2.5.1
 alembic==1.6.5

@@ -29,7 +29,7 @@ MarkupSafe==2.0.1
 mccabe==0.6.1
 mypy-extensions==0.4.3
 packaging==21.0
-pathspec==0.8.1
+pathspec==0.9.0
 pluggy==0.13.1
 prompt-toolkit==3.0.19
 psycopg2==2.9.1
@@ -43,9 +43,9 @@ python-dateutil==2.8.2
 python-editor==1.0.4
 pytz==2021.1
 redis==3.5.3
-regex==2021.7.6
+regex==2021.8.3
 six==1.16.0
-SQLAlchemy==1.4.20
+SQLAlchemy==1.4.22
 SQLAlchemy-Utils==0.37.8
 toml==0.10.2
 typed-ast==1.4.3
