@@ -13,7 +13,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Python` to `3.9.5`
+- Update `Python` to `3.9.6` and switch to Debian Bullseye Slim
 - Update `PostgreSQL` to `13.3`
 - Update `Redis` to `6.2.4`
 
