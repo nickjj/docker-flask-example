@@ -20,12 +20,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Back-end packages
 
 - Update `Flask-DB` to `0.3.2`
+- Update `Flask` to `2.0.2`
 - Update `SQLAlchemy-Utils` to `0.37.8`
-- Update `SQLAlchemy` to `1.4.23`
-- Update `alembic` to `1.7.1`
+- Update `SQLAlchemy` to `1.4.25`
+- Update `alembic` to `1.7.4`
 - Update `celery` to `5.1.2`
 - Update `psycopg2` to `2.9.1`
-- Update `pytest-cov` to `2.12.1`
+- Update `pytest-cov` to `3.0.0`
 - Update `pytest` to `6.2.5`
 
 #### Front-end packages
