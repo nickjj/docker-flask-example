@@ -38,7 +38,7 @@ function flask {
 }
 
 function hadolint {
-  # Lint Dockerfile hadolint
+  # Lint Dockerfile with hadolint
   docker container run --rm -i \
     hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
 }
@@ -121,6 +121,7 @@ function ci:test {
   #   - https://github.com/koalaman/shellcheck
   #   - https://github.com/nickjj/wait-until
   shellcheck run bin/*
+  hadolint "${@}"
 
   cp --no-clobber .env.example .env
   cp --no-clobber docker-compose.override.yml.example docker-compose.override.yml
@@ -134,7 +135,6 @@ function ci:test {
     -e PGPASSWORD=${POSTGRES_PASSWORD} postgres \
     psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
 
-  hadolint "${@}"
   flake8 "${@}"
   black --check
   flask db reset --with-testdb
