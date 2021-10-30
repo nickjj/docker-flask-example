@@ -37,6 +37,12 @@ function flask {
   cmd flask "${@}"
 }
 
+function hadolint {
+  # Lint Dockerfile hadolint
+  docker container run --rm -i \
+    hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
+}
+
 function flake8 {
   # Lint Python code with flake8
   cmd flake8 "${@}"
@@ -128,6 +134,7 @@ function ci:test {
     -e PGPASSWORD=${POSTGRES_PASSWORD} postgres \
     psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
 
+  hadolint "${@}"
   flake8 "${@}"
   black --check
   flask db reset --with-testdb
