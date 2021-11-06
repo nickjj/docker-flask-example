@@ -13,6 +13,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `Node` to `14.18.1`
 
+#### Back-end packages
+
+- Update `SQLAlchemy-Utils` to `0.37.9`
+- Update `SQLAlchemy` to `1.4.26`
+- Update `flake8` to `4.0.1`
+- Update `py` to `1.11.0`
+
 ### Added
 
 - Lint Dockerfile with <https://github.com/hadolint/hadolint>
