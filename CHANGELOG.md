@@ -39,10 +39,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `css-minimizer-webpack-plugin` to `3.2.0`
 - Update `mini-css-extract-plugin` to `2.4.5`
 - Update `postcss-loader` to `6.2.1`
-- Update `postcss` to `8.4.3`
-- Update `tailwindcss` to `2.2.19`
+- Update `postcss` to `8.4.4`
+- Update `tailwindcss` to `3.0.0`
 - Update `webpack-cli` to `4.9.1`
-- Update `webpack` to `5.64.4`
+- Update `webpack` to `5.65.0`
 
 ### Added
 
