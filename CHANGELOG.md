@@ -7,7 +7,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Lint Dockerfile with <https://github.com/hadolint/hadolint>
+
 ### Changed
+
+- Update `assets/tailwind.config.js` based on the new TailwindCSS v3 defaults
 
 #### Languages and services
 
@@ -43,10 +49,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `tailwindcss` to `3.0.0`
 - Update `webpack-cli` to `4.9.1`
 - Update `webpack` to `5.65.0`
-
-### Added
-
-- Lint Dockerfile with <https://github.com/hadolint/hadolint>
 
 ## [0.7.0] - 2021-10-10
 
