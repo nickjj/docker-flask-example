@@ -53,7 +53,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Front-end dependencies
 
 - Update `autoprefixer` to `10.4.0`
-- Update `postcss` to `8.4.4`
+- Update `postcss` to `8.4.5`
 - Update `tailwindcss` to `3.0.7`
 
 ### Removed
