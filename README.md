@@ -136,7 +136,7 @@ these commands for PowerShell if you want.
 git clone https://github.com/nickjj/docker-flask-example helloflask
 cd helloflask
 
-# Optionally checkout a specific tag, such as: git checkout 0.7.0
+# Optionally checkout a specific tag, such as: git checkout 0.8.0
 ```
 
 #### Copy a few example files because the real files are git ignored:
