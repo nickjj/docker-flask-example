@@ -63,6 +63,7 @@ This isn't an exhaustive list but here's a few reasonable choices depending on
 how you're building your app:
 
 - <https://hotwired.dev/>
+- <https://htmx.org/>
 - <https://github.com/alpinejs/alpine>
 - <https://vuejs.org/>
 - <https://reactjs.org/>
