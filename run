@@ -157,10 +157,10 @@ function ci:test {
     -e PGPASSWORD=${POSTGRES_PASSWORD} postgres \
     psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
 
-  flake8 "${@}"
-  black --check
+  lint "${@}"
+  format --check
   flask db reset --with-testdb
-  pytest "${@}"
+  test "${@}"
 }
 
 function help {
