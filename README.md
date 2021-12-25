@@ -181,21 +181,21 @@ Visit <http://localhost:8000> in your favorite browser.
 
 ```sh
 # You should get no output (that means everything is operational).
-./run flake8
+./run lint
 ```
 
 #### Formatting the code base:
 
 ```sh
 # You should see that everything is unchanged (it's all already formatted).
-./run black
+./run format
 ```
 
 #### Running the test suite:
 
 ```sh
 # You should see all passing tests. Warnings are typically ok.
-./run pytest
+./run test
 ```
 
 #### Stopping everything:
@@ -305,9 +305,9 @@ adding custom changes.
 
 ```sh
 # You can run this from the same terminal as before.
-./run flake8
-./run black
-./run pytest
+./run lint
+./run format
+./run test
 ```
 
 If everything passes now you can optionally `git add -A && git commit -m
