@@ -143,7 +143,7 @@ function ci:test {
   #   - https://github.com/koalaman/shellcheck
   #   - https://github.com/nickjj/wait-until
   shellcheck run bin/*
-  hadolint "${@}"
+  lint:dockerfile "${@}"
 
   cp --no-clobber .env.example .env
   cp --no-clobber docker-compose.override.yml.example docker-compose.override.yml
