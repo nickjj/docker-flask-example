@@ -1,4 +1,4 @@
-FROM node:14.18.1-bullseye-slim AS webpack
+FROM node:16.13.1-bullseye-slim AS assets
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/assets
@@ -17,19 +17,13 @@ RUN yarn install
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
+    PATH="${PATH}:/node_modules/.bin" \
     USER="node"
 
-COPY --chown=node:node assets .
-
-# We need to copy the main web app so that PurgeCSS can find our HTML templates
-# at build time so it knows what to purge / keep in the final CSS bundle.
-#
-# This doesn't bloat anything in the end because only the final assets get
-# copied over in another build stage. Yay for multi-stage builds!
-COPY --chown=node:node hello /app/hello
+COPY --chown=node:node ../ ../
 
 RUN if [ "${NODE_ENV}" != "development" ]; then \
-  yarn run build; else mkdir -p /app/public; fi
+  ../run yarn:build:js && ../run yarn:build:css; else mkdir -p /app/public; fi
 
 CMD ["bash"]
 
@@ -63,7 +57,7 @@ ENV FLASK_ENV="${FLASK_ENV}" \
     PATH="${PATH}:/home/python/.local/bin" \
     USER="python"
 
-COPY --chown=python:python --from=webpack /app/public /public
+COPY --chown=python:python --from=assets /app/public /public
 COPY --chown=python:python . .
 
 RUN if [ "${FLASK_ENV}" != "development" ]; then \
