@@ -30,8 +30,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end packages
 
-- Update `SQLAlchemy-Utils` to `0.37.9`
-- Update `SQLAlchemy` to `1.4.28`
+- Update `SQLAlchemy-Utils` to `0.38.1`
+- Update `SQLAlchemy` to `1.4.29`
 - Update `alembic` to `1.7.5`
 - Update `celery` to `5.2.1`
 - Update `flake8` to `4.0.1`

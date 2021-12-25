@@ -1,5 +1,5 @@
 alembic==1.7.5
-amqp==5.0.6
+amqp==5.0.9
 appdirs==1.4.4
 attrs==21.2.0
 billiard==3.6.4.0
@@ -44,10 +44,10 @@ pytz==2021.3
 redis==4.0.2
 regex==2021.11.10
 six==1.16.0
-SQLAlchemy==1.4.28
-SQLAlchemy-Utils==0.37.9
+SQLAlchemy==1.4.29
+SQLAlchemy-Utils==0.38.1
 toml==0.10.2
-tomli==1.2.2
+tomli==2.0.0
 typed-ast==1.5.1
 typing_extensions==4.0.1
 vine==5.0.0
