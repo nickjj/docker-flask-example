@@ -17,6 +17,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update Bash shebang to use `#!/usr/bin/env bash` in `pip3-install` and `docker-entrypoint-web`
 
+#### Back-end packages
+
+- Update `SQLAlchemy-Utils` to `0.38.2`
+- Update `celery` to `5.2.3`
+- Update `psycopg2` to `2.9.3`
+- Update `redis` to `4.1.0`
+
 ## [0.8.0] - 2021-12-25
 
 ### Added
