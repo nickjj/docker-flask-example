@@ -1,5 +1,5 @@
 Flask==2.0.3
-werkzeug==2.0.2
+werkzeug==2.0.3
 gunicorn==20.1.0
 
 psycopg2==2.9.3

@@ -34,6 +34,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `psycopg2` to `2.9.3`
 - Update `pytest` to `7.0.1`
 - Update `redis` to `4.1.4`
+- Update `werkzeug` to `2.0.3`
 
 #### Front-end dependencies
 
