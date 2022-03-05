@@ -4,6 +4,7 @@ from werkzeug.debug import DebuggedApplication
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 from hello.page.views import page
+from hello.up.views import up
 from hello.extensions import db
 from hello.extensions import debug_toolbar
 from hello.extensions import flask_static_digest
@@ -51,6 +52,7 @@ def create_app(settings_override=None):
 
     middleware(app)
 
+    app.register_blueprint(up)
     app.register_blueprint(page)
 
     extensions(app)
