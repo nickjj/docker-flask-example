@@ -17,6 +17,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update Bash shebang to use `#!/usr/bin/env bash` in `pip3-install` and `docker-entrypoint-web`
 - Refactor `/up/` endpoint into its own view and add `/up/databases` as a second URL
+- Lock Jinja2 to `3.0.3` since `3.1.X` is incompatible with Flask Debug Toolbar
 
 #### Languages and services
 
