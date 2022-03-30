@@ -17,7 +17,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update Bash shebang to use `#!/usr/bin/env bash` in `pip3-install` and `docker-entrypoint-web`
 - Refactor `/up/` endpoint into its own view and add `/up/databases` as a second URL
-- Lock Jinja2 to `3.0.3` since `3.1.X` is incompatible with Flask Debug Toolbar
 
 #### Languages and services
 
@@ -27,16 +26,18 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `Flask` to `2.0.3`
+- Update `Flask` to `2.1.0`
 - Update `SQLAlchemy-Utils` to `0.38.2`
 - Update `SQLAlchemy` to `1.4.32`
 - Update `alembic` to `1.7.7`
-- Update `black` to `22.1.0`
+- Update `black` to `22.3.0`
 - Update `celery` to `5.2.3`
+- Update `flask-debugtoolbar` to `0.13.1`
+- Update `jinja2` to `3.1.0`
 - Update `psycopg2` to `2.9.3`
 - Update `pytest` to `7.1.1`
-- Update `redis` to `4.1.4`
-- Update `werkzeug` to `2.0.3`
+- Update `redis` to `4.2.0`
+- Update `werkzeug` to `2.1.0`
 
 #### Front-end dependencies
 
