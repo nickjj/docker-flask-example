@@ -26,17 +26,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `Flask` to `2.1.0`
+- Update `Flask` to `2.1.1`
 - Update `SQLAlchemy-Utils` to `0.38.2`
-- Update `SQLAlchemy` to `1.4.32`
+- Update `SQLAlchemy` to `1.4.35`
 - Update `alembic` to `1.7.7`
 - Update `black` to `22.3.0`
-- Update `celery` to `5.2.3`
+- Update `celery` to `5.2.6`
 - Update `flask-debugtoolbar` to `0.13.1`
 - Update `jinja2` to `3.1.0`
 - Update `psycopg2` to `2.9.3`
 - Update `pytest` to `7.1.1`
-- Update `redis` to `4.2.0`
+- Update `redis` to `4.2.2`
 - Update `werkzeug` to `2.1.0`
 
 #### Front-end dependencies
