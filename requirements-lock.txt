@@ -1,5 +1,5 @@
 alembic==1.7.7
-amqp==5.1.0
+amqp==5.1.1
 async-timeout==4.0.2
 attrs==21.4.0
 billiard==3.6.4.0
@@ -23,7 +23,7 @@ greenlet==1.1.2
 gunicorn==20.1.0
 iniconfig==1.1.1
 itsdangerous==2.1.2
-Jinja2==3.1.0
+Jinja2==3.1.1
 kombu==5.2.4
 Mako==1.2.0
 MarkupSafe==2.1.1
@@ -31,14 +31,14 @@ mccabe==0.6.1
 mypy-extensions==0.4.3
 packaging==21.3
 pathspec==0.9.0
-platformdirs==2.5.1
+platformdirs==2.5.2
 pluggy==1.0.0
 prompt-toolkit==3.0.29
 psycopg2==2.9.3
 py==1.11.0
 pycodestyle==2.8.0
 pyflakes==2.4.0
-pyparsing==3.0.7
+pyparsing==3.0.8
 pytest==7.1.1
 pytest-cov==3.0.0
 pytz==2022.1
@@ -49,5 +49,5 @@ SQLAlchemy-Utils==0.38.2
 tomli==2.0.1
 vine==5.0.0
 wcwidth==0.2.5
-Werkzeug==2.1.0
+Werkzeug==2.1.1
 wrapt==1.14.0

@@ -33,11 +33,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `black` to `22.3.0`
 - Update `celery` to `5.2.6`
 - Update `flask-debugtoolbar` to `0.13.1`
-- Update `jinja2` to `3.1.0`
+- Update `jinja2` to `3.1.1`
 - Update `psycopg2` to `2.9.3`
 - Update `pytest` to `7.1.1`
 - Update `redis` to `4.2.2`
-- Update `werkzeug` to `2.1.0`
+- Update `werkzeug` to `2.1.1`
 
 #### Front-end dependencies
 
