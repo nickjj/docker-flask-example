@@ -22,6 +22,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `celery` to `5.2.7`
 - Update `redis` to `4.3.3`
 
+#### Front-end dependencies
+
+- Update `esbuild` to `0.14.43`
+- Update `postcss` to `8.4.14`
+- Update `tailwindcss` to `3.1.2`
+
 ## [0.9.0] - 2022-05-15
 
 ### Added
