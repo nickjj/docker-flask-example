@@ -1,21 +1,21 @@
 Flask==2.1.2
-werkzeug==2.1.1
-jinja2==3.1.1
+werkzeug==2.1.2
+jinja2==3.1.2
 gunicorn==20.1.0
 
 psycopg2==2.9.3
-SQLAlchemy==1.4.37
+SQLAlchemy==1.4.39
 SQLAlchemy-Utils==0.38.2
 Flask-SQLAlchemy==2.5.1
 alembic==1.8.0
 
-redis==4.3.3
+redis==4.3.4
 celery==5.2.7
 
 pytest==7.1.2
 pytest-cov==3.0.0
 flake8==4.0.1
-black==22.3.0
+black==22.6.0
 
 flask-debugtoolbar==0.13.1
 Flask-Static-Digest==0.2.1

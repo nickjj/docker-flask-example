@@ -18,10 +18,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `SQLAlchemy` to `1.4.37`
+- Update `SQLAlchemy` to `1.4.39`
 - Update `alembic` to `1.8.0`
+- Update `black` to `22.6.0`
 - Update `celery` to `5.2.7`
-- Update `redis` to `4.3.3`
+- Update `jinja` to `2.1.2`
+- Update `redis` to `4.3.4`
+- Update `werkzeug` to `2.1.2`
 
 #### Front-end dependencies
 
