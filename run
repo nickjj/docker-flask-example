@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-set -eo pipefail
+set -o errexit
+set -o pipefail
+set -o nounset
 
 DC="${DC:-exec}"
 
@@ -110,7 +112,7 @@ function yarn:build:css {
   # Build CSS assets, this is meant to be run from within the assets container
   local args=()
 
-  if [ "${NODE_ENV}" == "production" ]; then
+  if [ "${NODE_ENV:-}" == "production" ]; then
     args=(--minify)
   else
     args=(--watch)

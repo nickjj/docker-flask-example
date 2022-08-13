@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `set -o nounset` to `run` script to exit if there's any undefined variables
+
 ### Changed
 
 - Replace `FLASK_ENV` with `FLASK_DEBUG` (`FLASK_ENV` will be deprecated in Flask 2.3)
