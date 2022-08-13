@@ -14,5 +14,5 @@ def home():
         "page/home.html",
         flask_ver=__version__,
         python_ver=os.environ["PYTHON_VERSION"],
-        flask_env=os.environ["FLASK_ENV"],
+        flask_debug=os.environ["FLASK_DEBUG"],
     )

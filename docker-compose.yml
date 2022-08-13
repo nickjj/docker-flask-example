@@ -3,7 +3,7 @@ x-app: &default-app
     context: "."
     target: "app"
     args:
-      - "FLASK_ENV=${FLASK_ENV:-production}"
+      - "FLASK_DEBUG=${FLASK_DEBUG:-false}"
       - "NODE_ENV=${NODE_ENV:-production}"
   depends_on:
     - "postgres"

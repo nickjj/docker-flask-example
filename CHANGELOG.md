@@ -9,6 +9,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Replace `FLASK_ENV` with `FLASK_DEBUG` (`FLASK_ENV` will be deprecated in Flask 2.3)
+
 #### Languages and services
 
 - Update `Python` to `3.10.5`
