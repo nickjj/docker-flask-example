@@ -14,6 +14,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Replace `FLASK_ENV` with `FLASK_DEBUG` (`FLASK_ENV` will be deprecated in Flask 2.3)
+- Switch Docker Compose `env_file` to `environment` for `postgres` to avoid needless recreates on `.env` changes
 
 #### Languages and services
 
@@ -41,6 +42,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `esbuild` to `0.15.2`
 - Update `postcss` to `8.4.16`
 - Update `tailwindcss` to `3.1.8`
+
+### Removed
+
+- Docker Compose `env_file` property for `redis` to avoid needless recreates on `.env` changes
 
 ## [0.9.0] - 2022-05-15
 
