@@ -10,6 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Adjust `x-assets` to use a `stop_grace_period` of `0` for faster CTRL+c times in dev
+- Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 
 ## [0.10.0] - 2022-09-08
 
