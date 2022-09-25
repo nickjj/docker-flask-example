@@ -22,6 +22,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `black` to `22.8.0`
 - Update `pytest` to `7.1.3`
 
+#### Front-end dependencies
+
+- Update `autoprefixer` to `10.4.12`
+- Update `esbuild` to `0.15.9`
+- Update `postcss-import` to `15.0.0`
+
 ## [0.10.0] - 2022-09-08
 
 ### Added
