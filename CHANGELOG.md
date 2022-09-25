@@ -16,6 +16,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `Redis` to `7.0.5`
 
+#### Back-end dependencies
+
+- Update `SQLAlchemy` to `1.4.41`
+- Update `black` to `22.8.0`
+- Update `pytest` to `7.1.3`
+
 ## [0.10.0] - 2022-09-08
 
 ### Added
