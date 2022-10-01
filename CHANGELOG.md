@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Ability to customize `UID` and `GID` if you're not using `1000:1000` (check the `.env.example` file)
+
 ### Changed
 
 - Adjust `x-assets` to use a `stop_grace_period` of `0` for faster CTRL+c times in dev
