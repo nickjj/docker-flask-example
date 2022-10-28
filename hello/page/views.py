@@ -4,7 +4,6 @@ from flask import Blueprint
 from flask import __version__
 from flask import render_template
 
-
 page = Blueprint("page", __name__, template_folder="templates")
 
 
