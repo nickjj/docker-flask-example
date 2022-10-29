@@ -50,7 +50,7 @@ function lint {
   cmd flake8 "${@}"
 }
 
-function isort {
+function format:imports {
   # Sort Python imports
   cmd isort . "${@}"
 }
@@ -62,9 +62,9 @@ function format {
 
 function quality {
   # Perform all code quality commands together
-  lint
-  isort
+  format:imports
   format
+  lint
 }
 
 function test {
@@ -173,7 +173,7 @@ function ci:test {
   docker compose logs
 
   lint "${@}"
-  isort --check
+  format:imports --check
   format --check
   flask db reset --with-testdb
   test "${@}"
