@@ -42,6 +42,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `postcss-import` to `15.0.0`
 - Update `postcss` to `8.4.17`
 
+### Fixed
+
+- Correctly append `_test` database name to database URI when using query strings
+
 ## [0.10.0] - 2022-09-08
 
 ### Added

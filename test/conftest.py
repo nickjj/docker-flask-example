@@ -12,7 +12,13 @@ def app():
 
     :return: Flask app
     """
-    db_uri = f"{settings.SQLALCHEMY_DATABASE_URI}_test"
+    db_uri = settings.SQLALCHEMY_DATABASE_URI
+
+    if "?" in db_uri:
+        db_uri = db_uri.replace("?", "_test?")
+    else:
+        db_uri = f"{db_uri}_test"
+
     params = {
         "DEBUG": False,
         "TESTING": True,
