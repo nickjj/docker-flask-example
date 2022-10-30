@@ -46,6 +46,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - Correctly append `_test` database name to database URI when using query strings
+- Ensure Flake8, Black and isort all use 79 as the max line length
 
 ## [0.10.0] - 2022-09-08
 
