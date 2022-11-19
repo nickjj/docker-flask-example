@@ -44,6 +44,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `postcss` to `8.4.19`
 - Update `tailwindcss` to `3.2.4`
 
+### Removed
+
+- `set -o nounset` from `run` script since it's incompatible with Bash 3.2 (default on macOS)
+
 ### Fixed
 
 - Correctly append `_test` database name to database URI when using query strings
