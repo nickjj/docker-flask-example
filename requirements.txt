@@ -9,12 +9,12 @@ SQLAlchemy-Utils==0.38.3
 Flask-SQLAlchemy==3.0.2
 alembic==1.8.1
 
-redis==4.3.4
+redis==4.4.0
 celery==5.2.7
 
 pytest==7.2.0
 pytest-cov==4.0.0
-flake8==5.0.4
+flake8==6.0.0
 isort==5.10.1
 black==22.10.0
 
