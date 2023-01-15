@@ -1,4 +1,4 @@
-alembic==1.9.1
+alembic==1.9.2
 amqp==5.1.1
 async-timeout==4.0.2
 attrs==22.2.0
@@ -10,7 +10,7 @@ click==8.1.3
 click-didyoumean==0.3.0
 click-plugins==1.1.1
 click-repl==0.2.0
-coverage==7.0.1
+coverage==7.0.5
 flake8==6.0.0
 Flask==2.2.2
 Flask-DB==0.3.2
@@ -20,7 +20,7 @@ Flask-SQLAlchemy==3.0.2
 Flask-Static-Digest==0.2.1
 greenlet==2.0.1
 gunicorn==20.1.0
-iniconfig==1.1.1
+iniconfig==2.0.0
 isort==5.11.4
 itsdangerous==2.1.2
 Jinja2==3.1.2
@@ -29,7 +29,7 @@ Mako==1.2.4
 MarkupSafe==2.1.1
 mccabe==0.7.0
 mypy-extensions==0.4.3
-packaging==22.0
+packaging==23.0
 pathspec==0.10.3
 platformdirs==2.6.2
 pluggy==1.0.0
@@ -37,12 +37,12 @@ prompt-toolkit==3.0.36
 psycopg2==2.9.5
 pycodestyle==2.10.0
 pyflakes==3.0.1
-pytest==7.2.0
+pytest==7.2.1
 pytest-cov==4.0.0
-pytz==2022.7
-redis==4.4.0
+pytz==2022.7.1
+redis==4.4.2
 six==1.16.0
-SQLAlchemy==1.4.45
+SQLAlchemy==1.4.46
 SQLAlchemy-Utils==0.39.0
 vine==5.0.0
 wcwidth==0.2.5
