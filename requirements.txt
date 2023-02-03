@@ -4,9 +4,9 @@ jinja2==3.1.2
 gunicorn==20.1.0
 
 psycopg2==2.9.5
-SQLAlchemy==1.4.46
+SQLAlchemy==2.0.1
 SQLAlchemy-Utils==0.39.0
-Flask-SQLAlchemy==3.0.2
+Flask-SQLAlchemy==3.0.3
 alembic==1.9.2
 
 redis==4.4.2
@@ -15,8 +15,8 @@ celery==5.2.7
 pytest==7.2.1
 pytest-cov==4.0.0
 flake8==6.0.0
-isort==5.11.4
-black==22.12.0
+isort==5.12.0
+black==23.1.0
 
 flask-debugtoolbar==0.13.1
 Flask-Static-Digest==0.2.1
