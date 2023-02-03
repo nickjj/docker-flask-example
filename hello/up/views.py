@@ -1,5 +1,4 @@
 from flask import Blueprint
-from sqlalchemy import text
 
 from hello.extensions import db
 from hello.initializers import redis
@@ -15,7 +14,5 @@ def index():
 @up.get("/databases")
 def databases():
     redis.ping()
-
-    with db.engine.connect() as connection:
-        connection.execute(text("SELECT 1"))
+    db.engine.execute("SELECT 1")
     return ""

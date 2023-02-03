@@ -19,7 +19,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Adjust `x-assets` to use a `stop_grace_period` of `0` for faster CTRL+c times in dev
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 - Adjust Hadolint to exit > 0 if any style warnings are present
-- In `hello/up/views.py`, update raw SQL `SELECT 1` health check for SQLAlchemy 2.0
 
 #### Languages and services
 
@@ -32,7 +31,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `Flask-SQLAlchemy` to `3.0.3`
 - Update `SQLAlchemy-Utils` to `0.39.0`
-- Update `SQLAlchemy` to `2.0.1`
+- Update `SQLAlchemy` to `1.4.46`
 - Update `alembic` to `1.9.2`
 - Update `black` to `23.1.0`
 - Update `flake8` to `6.0.0`

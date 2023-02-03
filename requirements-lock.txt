@@ -42,9 +42,8 @@ pytest-cov==4.0.0
 pytz==2022.7.1
 redis==4.4.2
 six==1.16.0
-SQLAlchemy==2.0.1
+SQLAlchemy==1.4.46
 SQLAlchemy-Utils==0.39.0
-typing_extensions==4.4.0
 vine==5.0.0
 wcwidth==0.2.6
 Werkzeug==2.2.2
