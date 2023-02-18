@@ -20,6 +20,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 - Adjust Hadolint to exit > 0 if any style warnings are present
 - Rename `esbuild.config.js` to `esbuild.config.mjs` and refactor config for esbuild 0.17+
+- In `hello/up/views.py`, update raw SQL `SELECT 1` health check for SQLAlchemy 2.0
 
 #### Languages and services
 
@@ -31,16 +32,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Back-end dependencies
 
 - Update `Flask-SQLAlchemy` to `3.0.3`
-- Update `SQLAlchemy-Utils` to `0.39.0`
-- Update `SQLAlchemy` to `1.4.46`
-- Update `alembic` to `1.9.2`
+- Update `Flask` to `2.2.3`
+- Update `SQLAlchemy-Utils` to `0.40.0`
+- Update `SQLAlchemy` to `2.0.3`
+- Update `alembic` to `1.9.4`
 - Update `black` to `23.1.0`
 - Update `flake8` to `6.0.0`
 - Update `isort` to `5.12.0`
 - Update `psycopg2` to `2.9.5`
 - Update `pytest-cov` to `4.0.0`
 - Update `pytest` to `7.2.1`
-- Update `redis` to `4.4.2`
+- Update `redis` to `4.5.1`
 
 #### Front-end dependencies
 
