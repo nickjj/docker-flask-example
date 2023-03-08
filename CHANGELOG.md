@@ -34,14 +34,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `Flask-SQLAlchemy` to `3.0.3`
 - Update `Flask` to `2.2.3`
 - Update `SQLAlchemy-Utils` to `0.40.0`
-- Update `SQLAlchemy` to `2.0.3`
-- Update `alembic` to `1.9.4`
+- Update `SQLAlchemy` to `2.0.5.post1`
+- Update `alembic` to `1.10.1`
 - Update `black` to `23.1.0`
 - Update `flake8` to `6.0.0`
 - Update `isort` to `5.12.0`
 - Update `psycopg2` to `2.9.5`
 - Update `pytest-cov` to `4.0.0`
-- Update `pytest` to `7.2.1`
+- Update `pytest` to `7.2.2`
 - Update `redis` to `4.5.1`
 
 #### Front-end dependencies
