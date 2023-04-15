@@ -31,7 +31,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Replace `psycopg2` with `psycopg` (3.X)
 - Update `Flask-SQLAlchemy` to `3.0.3`
 - Update `Flask-Static-Digest` to `0.3.0`
 - Update `Flask` to `2.2.3`
@@ -41,6 +40,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `black` to `23.3.0`
 - Update `flake8` to `6.0.0`
 - Update `isort` to `5.12.0`
+- Update `psycopg2` to `2.9.6`
 - Update `pytest-cov` to `4.0.0`
 - Update `pytest` to `7.3.1`
 - Update `redis` to `4.5.4`
