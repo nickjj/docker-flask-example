@@ -21,6 +21,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Adjust Hadolint to exit > 0 if any style warnings are present
 - Rename `esbuild.config.js` to `esbuild.config.mjs` and refactor config for esbuild 0.17+
 - In `hello/up/views.py`, update raw SQL `SELECT 1` health check for SQLAlchemy 2.0
+- Explicitly set `DEBUG` config option based off the `FLASK_DEBUG` env var so the intent is clear
 
 #### Languages and services
 
