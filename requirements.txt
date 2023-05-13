@@ -1,15 +1,15 @@
 Flask==2.3.2
-werkzeug==2.3.3
+werkzeug==2.3.4
 jinja2==3.1.2
 gunicorn==20.1.0
 
-psycopg2==2.9.6
-SQLAlchemy==2.0.12
+psycopg==3.1.9
+SQLAlchemy==2.0.13
 SQLAlchemy-Utils==0.41.1
 Flask-SQLAlchemy==3.0.3
 alembic==1.10.4
 
-redis==4.5.4
+redis==4.5.5
 celery==5.2.7
 
 pytest==7.3.1
