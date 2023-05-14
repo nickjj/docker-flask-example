@@ -7,7 +7,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+#### Back-end dependencies
+
+- Update `Flask-Static-Digest` to `0.4.0` (now it optionally supports Brotli compression)
 
 ## [0.11.0] - 2023-05-13
 

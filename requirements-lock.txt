@@ -15,7 +15,7 @@ Flask-DB==0.3.2
 Flask-DebugToolbar==0.13.1
 Flask-Secrets==0.1.0
 Flask-SQLAlchemy==3.0.3
-Flask-Static-Digest==0.3.0
+Flask-Static-Digest==0.4.0
 greenlet==2.0.2
 gunicorn==20.1.0
 iniconfig==2.0.0
