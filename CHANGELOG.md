@@ -16,6 +16,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `alembic` to `1.11.1`
 - Update `pytest-cov` to `4.1.0`
 
+#### Front-end dependencies
+
+- Update `postcss` to `8.4.24`
+
 ## [0.11.0] - 2023-05-13
 
 ### Added
