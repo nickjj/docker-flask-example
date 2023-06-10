@@ -1,7 +1,7 @@
 import os
 from distutils.util import strtobool
 
-SECRET_KEY = os.getenv("SECRET_KEY", None)
+SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = bool(strtobool(os.getenv("FLASK_DEBUG", "false")))
 
 SERVER_NAME = os.getenv(
