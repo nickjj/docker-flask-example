@@ -9,6 +9,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+#### Languages and services
+
+- Update `Python` to `3.11.4`
+
 #### Back-end dependencies
 
 - Update `Flask-Static-Digest` to `0.4.0` (now it optionally supports Brotli compression)
