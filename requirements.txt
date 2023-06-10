@@ -10,7 +10,7 @@ Flask-SQLAlchemy==3.0.3
 alembic==1.11.1
 
 redis==4.5.5
-celery==5.2.7
+celery==5.3.0
 
 pytest==7.3.1
 pytest-cov==4.1.0
