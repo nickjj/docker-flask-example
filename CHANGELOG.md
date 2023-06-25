@@ -17,11 +17,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
+- Update `Flask-SQLAlchemy` to `3.0.5`
 - Update `Flask-Static-Digest` to `0.4.0` (now it optionally supports Brotli compression)
-- Update `SQLAlchemy` to `2.0.15`
+- Update `SQLAlchemy` to `2.0.17`
 - Update `alembic` to `1.11.1`
-- Update `celery` to `5.3.0`
+- Update `celery` to `5.3.1`
 - Update `pytest-cov` to `4.1.0`
+- Update `pytest` to `7.4.0`
 
 #### Front-end dependencies
 
