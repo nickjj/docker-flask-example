@@ -24,6 +24,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `celery` to `5.3.1`
 - Update `pytest-cov` to `4.1.0`
 - Update `pytest` to `7.4.0`
+- Update `redis` to `4.6.0`
+- Update `werkzeug` to `2.3.6`
 
 #### Front-end dependencies
 
