@@ -6,7 +6,7 @@ gunicorn==21.2.0
 psycopg==3.1.10
 SQLAlchemy==2.0.20
 SQLAlchemy-Utils==0.41.1
-Flask-SQLAlchemy==3.0.5
+Flask-SQLAlchemy==3.1.1
 alembic==1.12.0
 
 redis==5.0.0
@@ -21,4 +21,4 @@ black==23.9.1
 flask-debugtoolbar==0.13.1
 Flask-Static-Digest==0.4.0
 Flask-Secrets==0.1.0
-Flask-DB==0.3.2
+Flask-DB==0.4.0

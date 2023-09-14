@@ -11,10 +11,10 @@ click-repl==0.3.0
 coverage==7.3.1
 flake8==6.1.0
 Flask==2.3.3
-Flask-DB==0.3.2
+Flask-DB==0.4.0
 Flask-DebugToolbar==0.13.1
 Flask-Secrets==0.1.0
-Flask-SQLAlchemy==3.0.5
+Flask-SQLAlchemy==3.1.1
 Flask-Static-Digest==0.4.0
 greenlet==2.0.2
 gunicorn==21.2.0

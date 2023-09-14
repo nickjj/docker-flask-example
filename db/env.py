@@ -9,7 +9,7 @@ from hello.app import create_app
 # There's no access to current_app here so we must create our own app.
 app = create_app()
 db_uri = app.config["SQLALCHEMY_DATABASE_URI"]
-db = app.extensions["sqlalchemy"].db
+db = app.extensions["sqlalchemy"]
 
 # Provide access to the values within alembic.ini.
 config = context.config
