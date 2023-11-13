@@ -3,20 +3,20 @@ werkzeug==2.3.7
 jinja2==3.1.2
 gunicorn==21.2.0
 
-psycopg==3.1.10
-SQLAlchemy==2.0.20
+psycopg==3.1.12
+SQLAlchemy==2.0.23
 SQLAlchemy-Utils==0.41.1
 Flask-SQLAlchemy==3.1.1
-alembic==1.12.0
+alembic==1.12.1
 
-redis==5.0.0
-celery==5.3.4
+redis==5.0.1
+celery==5.3.5
 
-pytest==7.4.2
+pytest==7.4.3
 pytest-cov==4.1.0
 flake8==6.1.0
 isort==5.12.0
-black==23.9.1
+black==23.11.0
 
 flask-debugtoolbar==0.13.1
 Flask-Static-Digest==0.4.0
