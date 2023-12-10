@@ -22,7 +22,7 @@ def create_celery_app(app=None):
     app = app or create_app()
 
     class FlaskTask(Task):
-        def __call__(self, *args: object, **kwargs: object) -> object:
+        def __call__(self, *args, **kwargs):
             with app.app_context():
                 return self.run(*args, **kwargs)
 
