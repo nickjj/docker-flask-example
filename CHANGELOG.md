@@ -33,6 +33,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `celery` to `5.3.6`
 - Update `flake8` to `7.0.0`
 - Update `gunicorn` to `21.2.0`
+- Update `isort` to `5.13.2`
 - Update `psycopg` to `3.1.16`
 - Update `pytest-cov` to `4.1.0`
 - Update `pytest` to `7.4.3`
