@@ -10,8 +10,8 @@ click-plugins==1.1.1
 click-repl==0.3.0
 coverage==7.4.0
 flake8==7.0.0
-Flask==3.0.0
-Flask-DB==0.4.0
+Flask==3.0.1
+Flask-DB==0.4.1
 Flask-DebugToolbar==0.14.1
 Flask-Secrets==0.1.0
 Flask-SQLAlchemy==3.1.1
@@ -22,7 +22,7 @@ iniconfig==2.0.0
 isort==5.13.2
 itsdangerous==2.1.2
 Jinja2==3.1.2
-kombu==5.3.4
+kombu==5.3.5
 Mako==1.3.0
 MarkupSafe==2.1.3
 mccabe==0.7.0
@@ -32,10 +32,10 @@ pathspec==0.12.1
 platformdirs==4.1.0
 pluggy==1.3.0
 prompt-toolkit==3.0.43
-psycopg==3.1.16
+psycopg==3.1.17
 pycodestyle==2.11.1
 pyflakes==3.2.0
-pytest==7.4.3
+pytest==7.4.4
 pytest-cov==4.1.0
 python-dateutil==2.8.2
 redis==5.0.1
@@ -45,5 +45,5 @@ SQLAlchemy-Utils==0.41.1
 typing_extensions==4.9.0
 tzdata==2023.4
 vine==5.1.0
-wcwidth==0.2.12
+wcwidth==0.2.13
 Werkzeug==3.0.1
