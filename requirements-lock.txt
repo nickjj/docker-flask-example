@@ -8,7 +8,7 @@ click==8.1.7
 click-didyoumean==0.3.0
 click-plugins==1.1.1
 click-repl==0.3.0
-coverage==7.4.2
+coverage==7.4.3
 flake8==7.0.0
 Flask==3.0.2
 Flask-DB==0.4.1
@@ -27,7 +27,7 @@ Mako==1.3.2
 MarkupSafe==2.1.5
 mccabe==0.7.0
 mypy-extensions==1.0.0
-packaging==23.2
+packaging==24.0
 pathspec==0.12.1
 platformdirs==4.2.0
 pluggy==1.4.0
@@ -35,14 +35,14 @@ prompt-toolkit==3.0.43
 psycopg==3.1.18
 pycodestyle==2.11.1
 pyflakes==3.2.0
-pytest==8.0.1
+pytest==8.1.1
 pytest-cov==4.1.0
-python-dateutil==2.8.2
-redis==5.0.1
+python-dateutil==2.9.0.post0
+redis==5.0.3
 six==1.16.0
-SQLAlchemy==2.0.27
+SQLAlchemy==2.0.28
 SQLAlchemy-Utils==0.41.1
-typing_extensions==4.9.0
+typing_extensions==4.10.0
 tzdata==2024.1
 vine==5.1.0
 wcwidth==0.2.13
