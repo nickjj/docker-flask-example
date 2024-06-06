@@ -23,10 +23,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Back-end dependencies
 
 - Update `Flask-DB` to `0.4.1`
-- Update `Flask-DebugToolbar` to `0.14.1`
+- Update `Flask-DebugToolbar` to `0.15.1`
 - Update `Flask-SQLAlchemy` to `3.1.1`
-- Update `Flask-Static-Digest` to `0.4.0` (now it optionally supports Brotli compression)
+- Update `Flask-Static-Digest` to `0.4.1`
 - Update `Flask` to `3.0.3`
+- Update `Jinja2` to `3.1.4`
 - Update `SQLAlchemy-Utils` to `0.41.2`
 - Update `SQLAlchemy` to `2.0.30`
 - Update `alembic` to `1.13.1`
@@ -37,8 +38,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `isort` to `5.13.2`
 - Update `psycopg` to `3.1.19`
 - Update `pytest-cov` to `5.0.0`
-- Update `pytest` to `8.2.0`
-- Update `redis` to `5.0.4`
+- Update `pytest` to `8.2.2`
+- Update `redis` to `5.0.5`
 - Update `werkzeug` to `3.0.3`
 
 #### Front-end dependencies
