@@ -4,17 +4,17 @@ Jinja2==3.1.4
 gunicorn==22.0.0
 
 psycopg==3.1.19
-SQLAlchemy==2.0.30
+SQLAlchemy==2.0.31
 SQLAlchemy-Utils==0.41.2
 Flask-SQLAlchemy==3.1.1
 alembic==1.13.1
 
-redis==5.0.5
+redis==5.0.6
 celery==5.4.0
 
 pytest==8.2.2
 pytest-cov==5.0.0
-flake8==7.0.0
+flake8==7.1.0
 isort==5.13.2
 black==24.4.2
 
