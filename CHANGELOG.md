@@ -7,6 +7,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `WEB_TIMEOUT` environment variable to configure gunicorn's timeout value (defaults to 120s)
+
 ### Changed
 
 - Convert `SECRET_KEY` into a required env var
