@@ -16,6 +16,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Convert `SECRET_KEY` into a required env var
 - Add `required: false` to `depends_on` in `docker-compose.yml` (requires Docker Compose v2.20.2+)
 - Refactor `create_celery_app` function to be compatible with Python 3.12+
+- Adjust `WEB_CONCURRENCY` to default to N number of CPU cores instead of 1 in development
 
 #### Languages and services
 
