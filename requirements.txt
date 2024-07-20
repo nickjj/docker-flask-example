@@ -3,16 +3,16 @@ Werkzeug==3.0.3
 Jinja2==3.1.4
 gunicorn==22.0.0
 
-psycopg==3.1.19
+psycopg==3.2.1
 SQLAlchemy==2.0.31
 SQLAlchemy-Utils==0.41.2
 Flask-SQLAlchemy==3.1.1
-alembic==1.13.1
+alembic==1.13.2
 
-redis==5.0.6
+redis==5.0.7
 celery==5.4.0
 
-pytest==8.2.2
+pytest==8.3.0
 pytest-cov==5.0.0
 flake8==7.1.0
 isort==5.13.2
