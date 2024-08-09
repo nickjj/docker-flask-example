@@ -147,7 +147,7 @@ these commands for PowerShell if you want.
 git clone https://github.com/nickjj/docker-flask-example helloflask
 cd helloflask
 
-# Optionally checkout a specific tag, such as: git checkout 0.11.0
+# Optionally checkout a specific tag, such as: git checkout 0.12.0
 ```
 
 #### Copy an example .env file because the real one is git ignored:
@@ -166,7 +166,7 @@ going to download a few Docker images and build the Python + Yarn dependencies.*
 docker compose up --build
 ```
 
-Now that everything is built and running we can treat it like any other Flask 
+Now that everything is built and running we can treat it like any other Flask
 app.
 
 Did you receive a `depends_on` "Additional property required is not allowed"
