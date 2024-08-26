@@ -17,7 +17,7 @@ Flask-Secrets==0.1.0
 Flask-SQLAlchemy==3.1.1
 Flask-Static-Digest==0.4.1
 greenlet==3.0.3
-gunicorn==22.0.0
+gunicorn==23.0.0
 iniconfig==2.0.0
 isort==5.13.2
 itsdangerous==2.2.0
@@ -46,4 +46,4 @@ typing_extensions==4.12.2
 tzdata==2024.1
 vine==5.1.0
 wcwidth==0.2.13
-Werkzeug==3.0.3
+Werkzeug==3.0.4
