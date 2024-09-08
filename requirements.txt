@@ -22,3 +22,5 @@ Flask-DebugToolbar==0.15.1
 Flask-Static-Digest==0.4.1
 Flask-Secrets==0.1.0
 Flask-DB==0.4.1
+
+setuptools==74.1.2

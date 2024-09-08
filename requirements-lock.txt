@@ -29,7 +29,7 @@ mccabe==0.7.0
 mypy-extensions==1.0.0
 packaging==24.1
 pathspec==0.12.1
-platformdirs==4.2.2
+platformdirs==4.3.2
 pluggy==1.5.0
 prompt_toolkit==3.0.47
 psycopg==3.2.1
@@ -39,6 +39,7 @@ pytest==8.3.2
 pytest-cov==5.0.0
 python-dateutil==2.9.0.post0
 redis==5.0.8
+setuptools==74.1.2
 six==1.16.0
 SQLAlchemy==2.0.32
 SQLAlchemy-Utils==0.41.2
