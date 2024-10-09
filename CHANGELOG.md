@@ -21,12 +21,15 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
+- Update `Flask-DebugToolbar` to `0.16.0`
 - Update `SQLAlchemy` to `2.0.35`
 - Update `Werkzeug` to `3.0.4`
 - Update `alembic` to `1.13.3`
+- Update `black` to `24.10.0`
 - Update `gunicorn` to `23.0.0`
-- Update `psycopg` to `3.2.2`
+- Update `psycopg` to `3.2.3`
 - Update `pytest` to `8.3.3`
+- Update `redis` to `5.1.1`
 
 #### Front-end dependencies
 
