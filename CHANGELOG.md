@@ -13,6 +13,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Get Flask version in `hello/page/views.py` with metadata instead of `__version__`
+
 #### Languages and services
 
 - Update `Python` to `3.13.0`
