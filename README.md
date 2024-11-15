@@ -97,7 +97,7 @@ and changes.
     - Add `page` blueprint to render a `/` page
     - Add `up` blueprint to provide a few health check pages
 - **Config**:
-    - Log to STDOUT so that Docker can consume and deal with log output 
+    - Log to STDOUT so that Docker can consume and deal with log output
     - Extract a bunch of configuration settings into environment variables
     - `config/settings.py` and the `.env` file handles configuration in all environments
 - **Front-end assets**:
