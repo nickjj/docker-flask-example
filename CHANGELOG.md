@@ -32,8 +32,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `gunicorn` to `23.0.0`
 - Update `psycopg` to `3.2.3`
 - Update `pytest-cov` to `6.0.0`
-- Update `pytest` to `8.3.3`
-- Update `redis` to `5.2.0`
+- Update `pytest` to `8.3.4`
+- Update `redis` to `5.2.1`
 
 #### Front-end dependencies
 
