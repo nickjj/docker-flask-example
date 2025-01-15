@@ -16,6 +16,7 @@ Flask-DebugToolbar==0.16.0
 Flask-Secrets==0.1.0
 Flask-SQLAlchemy==3.1.1
 Flask-Static-Digest==0.4.1
+greenlet==3.1.1
 gunicorn==23.0.0
 iniconfig==2.0.0
 isort==5.13.2
@@ -40,7 +41,7 @@ python-dateutil==2.9.0.post0
 redis==5.2.1
 setuptools==75.6.0
 six==1.17.0
-SQLAlchemy==2.0.36
+SQLAlchemy==2.0.37
 SQLAlchemy-Utils==0.41.2
 typing_extensions==4.12.2
 tzdata==2024.2
