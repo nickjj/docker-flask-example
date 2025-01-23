@@ -12,6 +12,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - `setuptools` Python dependency since Docker recently removed this from the official Python image
 - `./run pip3 [...]` to run any Pip command
 - `./run yarn [...]` to run any Yarn command
+- Dummy `SECRET_KEY` value to `flask digest compile` in Dockerfile
+- `FLASK_DEBUG` build argument to the assets build stage
 
 ### Changed
 

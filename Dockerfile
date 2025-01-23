@@ -69,7 +69,7 @@ COPY --chown=python:python --from=assets /app/public /public
 COPY --chown=python:python . .
 
 RUN if [ "${FLASK_DEBUG}" != "true" ]; then \
-  ln -s /public /app/public && flask digest compile && rm -rf /app/public; fi
+  ln -s /public /app/public && SECRET_KEY=dummy flask digest compile && rm -rf /app/public; fi
 
 ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
