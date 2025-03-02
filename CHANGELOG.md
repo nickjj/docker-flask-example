@@ -38,12 +38,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `Werkzeug` to `3.1.3`
 - Update `alembic` to `1.14.1`
 - Update `black` to `25.1.0`
+- Update `flake8` to `7.1.2`
 - Update `gunicorn` to `23.0.0`
-- Update `isort` to `6.0.0`
-- Update `psycopg` to `3.2.4`
+- Update `isort` to `6.0.1`
+- Update `psycopg` to `3.2.5`
 - Update `pytest-cov` to `6.0.0`
-- Update `pytest` to `8.3.4`
+- Update `pytest` to `8.3.5`
 - Update `redis` to `5.2.1`
+- Update `setuptools` to `75.8.2`
 
 #### Front-end dependencies
 
