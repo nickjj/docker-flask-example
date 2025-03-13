@@ -21,8 +21,8 @@ RUN yarn install && yarn cache clean
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
-    PATH="${PATH}:/node_modules/.bin" \
-    USER="node"
+  PATH="${PATH}:/node_modules/.bin" \
+  USER="node"
 
 COPY --chown=node:node . ..
 
@@ -58,12 +58,12 @@ RUN chmod 0755 bin/* && bin/pip3-install
 
 ARG FLASK_DEBUG="false"
 ENV FLASK_DEBUG="${FLASK_DEBUG}" \
-    FLASK_APP="hello.app" \
-    FLASK_SKIP_DOTENV="true" \
-    PYTHONUNBUFFERED="true" \
-    PYTHONPATH="." \
-    PATH="${PATH}:/home/python/.local/bin" \
-    USER="python"
+  FLASK_APP="hello.app" \
+  FLASK_SKIP_DOTENV="true" \
+  PYTHONUNBUFFERED="true" \
+  PYTHONPATH="." \
+  PATH="${PATH}:/home/python/.local/bin" \
+  USER="python"
 
 COPY --chown=python:python --from=assets /app/public /public
 COPY --chown=python:python . .
