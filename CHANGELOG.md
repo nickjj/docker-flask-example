@@ -22,6 +22,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Replace `./run yarn:install` with `./run deps:install [--no-build]` to install any deps
 - Allow overriding `$TTY` as an environment variable in the `run` script
 - Use `.hadolint.yaml` to configure Hadolint instead of inline flags
+- Replace Black, flake8 and isort with Ruff
 
 #### Languages and services
 
@@ -38,10 +39,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `SQLAlchemy` to `2.0.38`
 - Update `Werkzeug` to `3.1.3`
 - Update `alembic` to `1.14.1`
-- Update `black` to `25.1.0`
-- Update `flake8` to `7.1.2`
 - Update `gunicorn` to `23.0.0`
-- Update `isort` to `6.0.1`
 - Update `psycopg` to `3.2.5`
 - Update `pytest-cov` to `6.0.0`
 - Update `pytest` to `8.3.5`
