@@ -1,12 +1,9 @@
-from celery import Celery
-from celery import Task
+from celery import Celery, Task
 from flask import Flask
 from werkzeug.debug import DebuggedApplication
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-from hello.extensions import db
-from hello.extensions import debug_toolbar
-from hello.extensions import flask_static_digest
+from hello.extensions import db, debug_toolbar, flask_static_digest
 from hello.page.views import page
 from hello.up.views import up
 
