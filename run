@@ -143,7 +143,7 @@ yarn:build:css() {
 clean() {
   # Remove cache and other machine generates files
   rm -rf public/*.* public/js public/css public/images public/fonts \
-    .pytest_cache/ .coverage celerybeat-schedule
+    .ruff_cache/ .pytest_cache/ .coverage celerybeat-schedule
 
   touch public/.keep
 }
