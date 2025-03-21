@@ -16,84 +16,84 @@ fi
 # Helper functions start with _ and aren't listed in this script's help menu.
 # -----------------------------------------------------------------------------
 
-function _dc {
+_dc() {
   # shellcheck disable=SC2086
   docker compose "${DC}" ${TTY} "${@}"
 }
 
-function _dc_run {
+_dc_run() {
   DC="run" _dc --no-deps --rm "${@}"
 }
 
 # -----------------------------------------------------------------------------
 
-function cmd {
+cmd() {
   # Run any command you want in the web container
   _dc web "${@}"
 }
 
-function flask {
+flask() {
   # Run any Flask commands
   cmd flask "${@}"
 }
 
-function lint:dockerfile {
+lint:dockerfile() {
   # Lint Dockerfile
   docker container run --rm -i \
     -v "${PWD}/.hadolint.yaml:/.config/hadolint.yaml" \
     hadolint/hadolint hadolint "${@}" - <Dockerfile
 }
 
-function lint {
+lint() {
   # Lint Python code
   cmd ruff check "${@}"
 }
 
-function format:imports {
+format:imports() {
   # Sort Python imports
   lint --select I --fix "${@}"
 }
 
-function format {
+format() {
   # Format Python code
   cmd ruff format "${@}"
 }
 
-function quality {
+quality() {
   # Perform all code quality commands together
   format:imports "${@}"
   format
   lint
 }
 
-function test {
+test() {
   # Run test suite
   cmd pytest test/ "${@}"
 }
 
-function test:coverage {
+test:coverage() {
   # Get test coverage
   cmd pytest --cov test/ --cov-report term-missing "${@}"
 }
 
-function shell {
+shell() {
   # Start a shell session in the web container
   cmd bash "${@}"
 }
 
-function psql {
+psql() {
   # Connect to PostgreSQL
   # shellcheck disable=SC1091
   . .env
   _dc postgres psql -U "${POSTGRES_USER}" "${@}"
 }
 
-function redis-cli {
+redis-cli() {
   # Connect to Redis
   _dc redis redis-cli "${@}"
 }
 
-function deps:install {
+deps:install() {
   local no_build="${1:-}"
 
   [ -z "${no_build}" ] && docker compose down && docker compose build
@@ -102,31 +102,31 @@ function deps:install {
   _dc_run web bin/pip3-install
 }
 
-function pip3 {
+pip3() {
   cmd pip3 "${@}"
 }
 
-function pip3:outdated {
+pip3:outdated() {
   # List any installed packages that are outdated
   _dc_run web pip3 list --outdated
 }
 
-function yarn {
+yarn() {
   _dc js yarn "${@}"
 }
 
-function yarn:outdated {
+yarn:outdated() {
   # List any installed packages that are outdated
   _dc_run js yarn outdated
 }
 
-function yarn:build:js {
+yarn:build:js() {
   # Build JS assets, this is meant to be run from within the assets container
   mkdir -p ../public/js
   node esbuild.config.mjs
 }
 
-function yarn:build:css {
+yarn:build:css() {
   # Build CSS assets, this is meant to be run from within the assets container
   local args=()
 
@@ -140,7 +140,7 @@ function yarn:build:css {
   tailwindcss -i css/app.css -o ../public/css/app.css "${args[@]}"
 }
 
-function clean {
+clean() {
   # Remove cache and other machine generates files
   rm -rf public/*.* public/js public/css public/images public/fonts \
     .pytest_cache/ .coverage celerybeat-schedule
@@ -148,7 +148,7 @@ function clean {
   touch public/.keep
 }
 
-function ci:install-deps {
+ci:install-deps() {
   # Install Continuous Integration (CI) dependencies
   sudo apt-get install -y curl shellcheck
   sudo curl \
@@ -156,7 +156,7 @@ function ci:install-deps {
     -o /usr/local/bin/wait-until && sudo chmod +x /usr/local/bin/wait-until
 }
 
-function ci:test {
+ci:test() {
   # Execute Continuous Integration (CI) pipeline
   #
   # It's expected that your CI environment has these tools available:
@@ -185,7 +185,7 @@ function ci:test {
   test "${@}"
 }
 
-function help {
+help() {
   printf "%s <task> [args]\n\nTasks:\n" "${0}"
 
   compgen -A function | grep -v "^_" | cat -n
