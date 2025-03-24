@@ -1,3 +1,31 @@
+[project]
+name = "hello"
+version = "0.1.0"
+description = "An example Flask app running in Docker."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "alembic==1.14.1",
+  "celery==5.4.0",
+  "flask==3.1.0",
+  "flask-db==0.4.1",
+  "flask-debugtoolbar==0.16.0",
+  "flask-secrets==0.1.0",
+  "flask-sqlalchemy==3.1.1",
+  "flask-static-digest==0.4.1",
+  "gunicorn==23.0.0",
+  "jinja2==3.1.5",
+  "psycopg==3.2.5",
+  "pytest==8.3.5",
+  "pytest-cov==6.0.0",
+  "redis==5.2.1",
+  "ruff==0.11.1",
+  "setuptools==75.8.2",
+  "sqlalchemy==2.0.38",
+  "sqlalchemy-utils==0.41.2",
+  "werkzeug==3.1.3",
+]
+
 [tool.ruff]
 line-length = 79
 

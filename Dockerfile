@@ -49,12 +49,12 @@ RUN apt-get update \
   && useradd --create-home --no-log-init -u "${UID}" -g "${GID}" python \
   && chown python:python -R /app
 
+COPY --from=ghcr.io/astral-sh/uv:0.6.9 /uv /uvx /usr/local/bin/
+
 USER python
 
-COPY --chown=python:python requirements*.txt ./
+COPY --chown=python:python pyproject.toml uv.lock* ./
 COPY --chown=python:python bin/ ./bin
-
-RUN chmod 0755 bin/* && bin/pip3-install
 
 ARG FLASK_DEBUG="false"
 ENV FLASK_DEBUG="${FLASK_DEBUG}" \
@@ -62,8 +62,13 @@ ENV FLASK_DEBUG="${FLASK_DEBUG}" \
   FLASK_SKIP_DOTENV="true" \
   PYTHONUNBUFFERED="true" \
   PYTHONPATH="." \
+  UV_COMPILE_BYTECODE=1 \
+  UV_PYTHON="/usr/local/bin/python" \
+  UV_PROJECT_ENVIRONMENT="/home/python/.local" \
   PATH="${PATH}:/home/python/.local/bin" \
   USER="python"
+
+RUN chmod 0755 bin/* && bin/uv-install
 
 COPY --chown=python:python --from=assets /app/public /public
 COPY --chown=python:python . .
