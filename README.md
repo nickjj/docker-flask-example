@@ -89,7 +89,7 @@ and changes.
     - *[Flask-Secrets](https://github.com/nickjj/flask-secrets)* to quickly generate secure random tokens you can use for various things
     - *[Flask-DebugToolbar](https://github.com/flask-debugtoolbar/flask-debugtoolbar)* to show useful information for debugging
 - **Linting, formatting and testing**:
-    - *[ruff]https://github.com/astral-sh/ruff)* is used to lint and format the code base
+    - *[ruff](https://github.com/astral-sh/ruff)* is used to lint and format the code base
     - *[pytest](https://github.com/pytest-dev/pytest)* and *pytest-cov* for writing tests and reporting test coverage
 - **Blueprints**:
     - Add `page` blueprint to render a `/` page
