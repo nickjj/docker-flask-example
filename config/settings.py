@@ -1,4 +1,5 @@
 import os
+
 from distutils.util import strtobool
 
 SECRET_KEY = os.environ["SECRET_KEY"]
