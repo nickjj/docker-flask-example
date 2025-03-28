@@ -14,6 +14,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - `./run yarn [...]` to run any Yarn command
 - Dummy `SECRET_KEY` value to `flask digest compile` in Dockerfile
 - `FLASK_DEBUG` build argument to the assets build stage
+- `./run lint:shell` for linting shell scripts with ShellCheck
 
 ### Changed
 
