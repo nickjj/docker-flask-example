@@ -38,15 +38,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Back-end dependencies
 
 - Update `alembic` to `1.15.2`
+- Update `celery` to `5.5.2`
 - Update `flask-debugtoolbar` to `0.16.0`
 - Update `flask` to `3.1.0`
 - Update `gunicorn` to `23.0.0`
 - Update `jinja2` to `3.1.6`
-- Update `psycopg` to `3.2.6`
-- Update `pytest-cov` to `6.0.0`
+- Update `psycopg` to `3.2.7`
+- Update `pytest-cov` to `6.1.1`
 - Update `pytest` to `8.3.5`
-- Update `redis` to `5.2.1`
-- Update `setuptools` to `78.1.0`
+- Update `redis` to `6.0.0`
+- Update `ruff` to `0.11.7`
+- Update `setuptools` to `80.1.0`
 - Update `sqlalchemy` to `2.0.40`
 - Update `werkzeug` to `3.1.3`
 
