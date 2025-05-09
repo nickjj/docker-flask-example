@@ -47,8 +47,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `pytest-cov` to `6.1.1`
 - Update `pytest` to `8.3.5`
 - Update `redis` to `6.0.0`
-- Update `ruff` to `0.11.7`
-- Update `setuptools` to `80.1.0`
+- Update `ruff` to `0.11.8`
+- Update `setuptools` to `80.3.1`
 - Update `sqlalchemy` to `2.0.40`
 - Update `werkzeug` to `3.1.3`
 
