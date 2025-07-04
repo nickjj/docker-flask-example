@@ -232,7 +232,7 @@ we cover how to customize this example app's name with an automated script
 
 ### `.env`
 
-This file is ignored from version control so it will never be commit. There's a
+This file is ignored from version control so it will never be commited. There's a
 number of environment variables defined here that control certain options and
 behavior of the application. Everything is documented there.
 
