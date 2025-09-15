@@ -5,7 +5,7 @@ description = "An example Flask app running in Docker."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-  "alembic==1.16.4",
+  "alembic==1.16.5",
   "celery==5.5.3",
   "flask==3.1.2",
   "flask-db==0.4.1",
@@ -15,14 +15,14 @@ dependencies = [
   "flask-static-digest==0.4.1",
   "gunicorn==23.0.0",
   "jinja2==3.1.6",
-  "psycopg==3.2.9",
-  "pytest==8.4.1",
-  "pytest-cov==6.2.1",
+  "psycopg==3.2.10",
+  "pytest==8.4.2",
+  "pytest-cov==7.0.0",
   "redis==6.4.0",
-  "ruff==0.12.10",
+  "ruff==0.13.0",
   "setuptools==80.9.0",
   "sqlalchemy==2.0.43",
-  "sqlalchemy-utils==0.41.2",
+  "sqlalchemy-utils==0.42.0",
   "werkzeug==3.1.3",
 ]
 
