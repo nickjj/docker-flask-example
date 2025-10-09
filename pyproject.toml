@@ -19,7 +19,7 @@ dependencies = [
   "pytest==8.4.2",
   "pytest-cov==7.0.0",
   "redis==6.4.0",
-  "ruff==0.13.0",
+  "ruff==0.14.0",
   "setuptools==80.9.0",
   "sqlalchemy==2.0.43",
   "sqlalchemy-utils==0.42.0",
