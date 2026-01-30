@@ -108,7 +108,7 @@ test() {
 
 test:coverage() {
   # Get test coverage
-  cmd pytest --cov test/ --cov-report term-missing "${@}"
+  cmd pytest test/ --cov hello/ --cov-report term-missing "${@}"
 }
 
 shell() {
