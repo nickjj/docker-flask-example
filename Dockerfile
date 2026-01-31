@@ -109,4 +109,6 @@ ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
 EXPOSE 8000
 
+HEALTHCHECK --interval=60s --timeout=3s --start-period=5s --retries=3 \n  CMD curl -f http://localhost:8000/healthz || exit 1
+
 CMD ["gunicorn", "-c", "python:config.gunicorn", "hello.app:create_app()"]

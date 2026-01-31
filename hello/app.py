@@ -1,9 +1,14 @@
 from celery import Celery, Task
-from flask import Flask
+import json
+import logging
+import time
+import uuid
+from flask import Flask, g, request
 from werkzeug.debug import DebuggedApplication
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 from hello.extensions import db, debug_toolbar, flask_static_digest
+from hello.health.views import health
 from hello.page.views import page
 from hello.up.views import up
 
@@ -31,6 +36,33 @@ def create_celery_app(app=None):
     return celery
 
 
+
+
+def register_request_logging(app):
+    if not app.config.get("JSON_LOGS"):
+        return
+
+    logger = logging.getLogger("hello.request")
+
+    @app.before_request
+    def _set_request_id():
+        request_id = request.headers.get("X-Request-Id") or str(uuid.uuid4())
+        g.request_id = request_id
+        g.request_start = time.perf_counter()
+
+    @app.after_request
+    def _log_request(response):
+        request_id = getattr(g, "request_id", None) or str(uuid.uuid4())
+        payload = {
+            "method": request.method,
+            "path": request.path,
+            "status_code": response.status_code,
+            "request_id": request_id,
+        }
+        logger.info(json.dumps(payload))
+        return response
+
+
 def create_app(settings_override=None):
     """
     Create a Flask application using the app factory pattern.
@@ -46,8 +78,10 @@ def create_app(settings_override=None):
         app.config.update(settings_override)
 
     middleware(app)
+    register_request_logging(app)
 
     app.register_blueprint(up)
+    app.register_blueprint(health)
     app.register_blueprint(page)
 
     extensions(app)
