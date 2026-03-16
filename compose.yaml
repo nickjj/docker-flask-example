@@ -90,7 +90,7 @@ services:
 
   worker:
     <<: *default-app
-    command: celery -A "hello.app.celery_app" worker -l "${CELERY_LOG_LEVEL:-info}"
+    command: celery -A "hello.app.celery_app" worker
     entrypoint: []
     deploy:
       resources:
