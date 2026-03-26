@@ -13,17 +13,17 @@ dependencies = [
   "flask-secrets==0.1.0",
   "flask-sqlalchemy==3.1.1",
   "flask-static-digest==0.4.1",
-  "gunicorn==25.1.0",
+  "gunicorn==25.2.0",
   "jinja2==3.1.6",
   "psycopg==3.3.3",
   "pytest==9.0.2",
-  "pytest-cov==7.0.0",
-  "redis==7.3.0",
-  "ruff==0.15.6",
+  "pytest-cov==7.1.0",
+  "redis==7.4.0",
+  "ruff==0.15.7",
   "setuptools==82.0.1",
   "sqlalchemy==2.0.48",
   "sqlalchemy-utils==0.42.1",
-  "werkzeug==3.1.6",
+  "werkzeug==3.1.7",
 ]
 
 [tool.ruff]
