@@ -66,8 +66,6 @@ def extensions(app):
     db.init_app(app)
     flask_static_digest.init_app(app)
 
-    return None
-
 
 def middleware(app):
     """
@@ -82,8 +80,6 @@ def middleware(app):
 
     # Set the real IP address into request.remote_addr when behind a proxy.
     app.wsgi_app = ProxyFix(app.wsgi_app)
-
-    return None
 
 
 celery_app = create_celery_app()

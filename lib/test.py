@@ -1,7 +1,7 @@
 import pytest
 
 
-class ViewTestMixin(object):
+class ViewTestMixin:
     """
     Automatically load in a session and client, this is common for a lot of
     tests that work with views.

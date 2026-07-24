@@ -19,7 +19,7 @@ dependencies = [
   "pytest==9.1.1",
   "pytest-cov==7.1.0",
   "redis==8.0.1",
-  "ruff==0.15.20",
+  "ruff==0.16.0",
   "setuptools==83.0.0",
   "sqlalchemy==2.0.51",
   "sqlalchemy-utils==0.42.1",
@@ -30,4 +30,4 @@ dependencies = [
 line-length = 79
 
 [tool.ruff.lint]
-extend-select = ["I", "SIM"]
+extend-select = ["I", "SIM", "E501"]
