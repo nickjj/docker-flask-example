@@ -147,6 +147,12 @@ cd helloflask
 cp .env.example .env
 ```
 
+The example `.env` enables Flask debug mode for local development. By default
+the web port is bound to `127.0.0.1:8000` so the development server and
+Werkzeug debugger are only reachable from your machine. If you change
+`DOCKER_WEB_PORT_FORWARD` to make the app reachable from another device, avoid
+doing that on untrusted networks while debug mode is enabled.
+
 #### Build everything:
 
 *The first time you run this it's going to take 5-10 minutes depending on your
